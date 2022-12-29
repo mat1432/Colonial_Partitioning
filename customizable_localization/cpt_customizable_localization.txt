@@ -1,0 +1,109 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+
+### Colony Core Setting
+#Ex: "Colony Core Setting - [Skip Uncored Colonies]"
+defined_text = {
+    name = GetColonyCoreSetting
+
+    text = {
+        localisation_key = cpt_core_setting_loc1
+        trigger = { cpt_core_1 = yes }
+    }
+    text = {
+        localisation_key = cpt_core_setting_loc2
+        trigger = { cpt_core_2 = yes }
+    }
+	text = {
+        localisation_key = cpt_core_setting_loc3
+        trigger = { cpt_core_3 = yes }
+	}
+}
+
+### Colony Claims Setting
+defined_text = {
+    name = GetColonyClaimsSetting
+
+    text = {
+        localisation_key = cpt_claims_setting_loc1
+        trigger = { cpt_claims_1 = yes }
+    }
+    text = {
+        localisation_key = cpt_claims_setting_loc2
+        trigger = { cpt_claims_2 = yes }
+    }
+	text = {
+        localisation_key = cpt_claims_setting_loc3
+        trigger = { cpt_claims_3 = yes }
+	}
+}
+
+
+### Player Colony Protection
+defined_text = {
+	name = GetColonyPlayerSetting
+    text = {
+        localisation_key = cpt_player_setting_enabled
+        trigger = { NOT = { has_country_flag = colony_p_players_x } }
+    }
+    text = {
+        localisation_key = cpt_player_setting_disabled
+		trigger = { has_country_flag = colony_p_players_x }
+    }
+}
+
+### No cheat icon
+defined_text = {
+	name = GetColonyNoCheat
+    text = { # no cheats allowed. returns {X icon}{:\>}
+        localisation_key = cpt_no_cheat_1
+        trigger = { has_global_flag = colony_p_nocheat }
+    }
+    text = { # no cheats allowed. returns {X icon}{ironman fist icon}
+        localisation_key = cpt_no_cheat_2
+		trigger = { ironman = yes }
+    }
+    text = { # all cheats allowed. returns {checkmark icon}{:\>}
+        localisation_key = cpt_no_cheat_3
+		trigger = { has_global_flag = colony_p_cheats }
+    }
+}
+### Colony Undo Warning
+# Given beneath all partitioning actions
+defined_text = {
+	name = GetUndoWarning
+	text = {
+		localisation_key = cpt_undo_warning_loc1
+		trigger = { always = yes }
+	}
+}
+
+
+# error debug reasons
+### Game is MP
+defined_text = {
+	name = GetColonyMP
+    text = {
+        localisation_key = cpt_mp_loc1
+        trigger = { has_global_flag = colony_p_mp }
+    }
+    text = {
+        localisation_key = cpt_mp_loc2
+		trigger = { NOT = { has_global_flag = colony_p_mp } }
+    }
+}
+### Server Delay is on
+defined_text = {
+	name = GetColonyMPDelay
+    text = {
+        localisation_key = cpt_delay_loc1
+        trigger = { cpt_mp_delay_active = yes }
+    }
+    text = {
+        localisation_key = cpt_delay_loc2
+		trigger = { cpt_mp_delay_expired = yes }
+    }
+}

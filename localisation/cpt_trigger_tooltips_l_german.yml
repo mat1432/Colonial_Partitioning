@@ -1,0 +1,22 @@
+﻿l_german:
+
+##Übersetzt von Thylon##
+
+# tooltips
+#   trigger tooltips
+cpt_menu_open: "Das Menü Koloniepartition ist NICHT geöffnet!"
+cpt_not_player_protected_tt: "Wurde NIEMALS von einem §YSpieler§! kontrolliert!"
+cpt_is_player_protected_tt: "Ist oder war von einem §von einem§! kontrolliert."
+cpt_cheats_allowed_tt: "Cheats sind erlaubt"
+cpt_ongoing_activity_tt: "Es gibt eine laufende Partitionierung!"
+cpt_no_ongoing_activity_tt: "Es gibt KEINE laufende Partitionierung"
+cpt_delay_active_tt: "Die Welt wurde kürzlich aufgeteilt!"
+cpt_delay_expired_tt: "Die Welt wurde in letzter Zeit NICHT aufgeteilt"
+
+cpt_player_potection_enabled_tt: "§YSpielerschutz§! ist §Gaktiviert§!"
+
+cpt_is_protected_tt: "Kolonie ist §YGeschützt§!"
+cpt_is_not_protected_tt: "Kolonie ist NICHT §YGeschützt§!"
+
+# for undo partitioning
+cpt_already_partitioned_tt: "Kolonie wurde bereits aufgeteilt!"

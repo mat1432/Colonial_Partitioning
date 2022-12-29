@@ -1,0 +1,367 @@
+
+cpt_protect_colony = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    # alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    # alert_tooltip = <key>           # The localisation key to display in the alert tooltip. Optional.
+    require_acceptance = no   # Whether the action needs to be accepted by the target country for the accept effect to execute.
+
+    # Determines when the action is visible
+    is_visible = {
+		ai = no
+        FROM = {
+			is_subject_of = root
+			is_colonial_nation = yes
+			NOT = { has_country_flag = colony_p_protected }
+		}
+    }
+
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_is_not_protected_tt
+				NOT = { has_country_flag = colony_p_protected }
+			}
+		}
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+
+    # Which effects to execute on acceptance
+    on_accept = {
+		custom_tooltip = cpt_set_protection_tt
+		hidden_effect = {
+			FROM = {
+				set_country_flag = colony_p_protected
+			}
+		}
+    }
+}
+
+cpt_unprotect_colony = {
+    category = influence
+    # alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    # alert_tooltip = <key>           # The localisation key to display in the alert tooltip. Optional.
+    require_acceptance = no
+
+    is_visible = {
+		ai = no
+        FROM = {
+			is_subject_of = root
+			is_colonial_nation = yes
+			has_country_flag = colony_p_protected
+		}
+    }
+
+    is_allowed = {
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_is_protected_tt
+				has_country_flag = colony_p_protected
+			}
+		}
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		custom_tooltip = cpt_unset_protection_tt
+		hidden_effect = {
+			FROM = {
+				clr_country_flag = colony_p_protected
+			}
+		}
+    }
+}
+
+
+cpt_annex_colony = {
+    category = influence
+    # alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    # alert_tooltip = <key>           # The localisation key to display in the alert tooltip. Optional.
+    require_acceptance = no
+
+    is_visible = {
+		ai = no
+		cpt_cheats_allowed = yes
+        FROM = {
+			is_subject_of = root
+			is_colonial_nation = yes
+		}
+    }
+
+    is_allowed = {
+		cpt_cheats_allowed = yes
+		FROM = {
+			ai = yes
+			cpt_not_player_protected = { nation = this }
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_is_not_protected_tt
+				NOT = { has_country_flag = colony_p_protected }
+			}
+		}
+    }
+
+    on_accept = {
+		custom_tooltip = cpt_annex_colony_tt
+
+		# tooltips
+		if = {
+			limit = { cpt_core_1 = yes }
+			custom_tooltip = cpt_core_1_ne_tt
+		}
+		else_if = {
+			limit = { cpt_core_2 = yes }
+			custom_tooltip = cpt_core_2_ne_tt
+		}
+		else_if = {
+			limit = { cpt_core_3 = yes }
+			custom_tooltip = cpt_core_3_ne_tt
+		}
+		
+		if = {
+			limit = { cpt_claims_1 = yes }
+			custom_tooltip = cpt_claims_1_tt
+		}
+		else_if = {
+			limit = { cpt_claims_2 = yes }
+			custom_tooltip = cpt_claims_2_tt
+		}
+		else_if = {
+			limit = { cpt_claims_3 = yes }
+			custom_tooltip = cpt_claims_3_tt
+		}
+		custom_tooltip = cpt_claims_player_tt
+
+		hidden_effect = {
+			set_global_flag = colony_p_ongoing
+			FROM = {
+				clr_country_flag = cpt_prev_partitioned
+				clr_country_flag = colony_p_protected
+				every_owned_province = {
+					# remember core status
+					if = {
+						limit = { is_territorial_core = PREV }
+						set_province_flag = territory_core
+					}
+					else_if = {
+						limit = { is_core = PREV }
+						set_province_flag = full_core
+					}
+
+
+					if = {
+						limit = { cpt_core_3 = yes }
+						add_core = ROOT
+					}
+					else = {
+						if = {
+							limit = { is_territorial_core = PREV }
+							add_territorial_core = ROOT
+						}
+						else_if = {
+							limit = { is_core = PREV }
+							add_core = ROOT
+						}
+						else_if = {
+							limit = { NOT = { is_core = PREV } }
+							if = {
+								limit = { has_construction = core }
+								cancel_construction = yes
+							}
+						}
+					}
+
+					remove_core = PREV
+					cede_province = ROOT
+
+
+					# previous owner regains cores
+					if = {
+						limit = { cpt_claims_3 = yes }
+						if = {
+							limit = { has_province_flag = territory_core }
+							add_territorial_core = PREV
+						}
+						if = {
+							limit = { has_province_flag = full_core }
+							add_core = PREV
+						}
+						add_claim = PREV
+					}
+					# previous owner gains claims
+					if = {
+						limit = { cpt_claims_2 = yes }
+						add_claim = PREV
+					}
+
+					# players always get the best treatment
+					if = {
+						limit = {
+							PREV = { OR = { was_player = yes ai = no } }
+						}
+						if = {
+							limit = { has_province_flag = territory_core }
+							add_territorial_core = PREV
+						}
+						if = {
+							limit = { has_province_flag = full_core }
+							add_core = PREV
+						}
+						# claim added after core. if core expires claim will remain
+						add_permanent_claim = PREV
+					}
+				}
+			}
+			clr_global_flag = colony_p_ongoing
+		}
+	}
+}
+
+
+
+# When processing:
+# Provinces given to the undo colony, no changes to core status they had prior will be made. they keep all cores and claims, and iff need be they must core everything all over again!
+# provinces from the current owner, will be processed like any partitioning. they keep cores, gain claims or lose everything like normal.
+# the current owner will gain recognition over these provinces as theirs in the past, and be flagged as previously partitioned.
+
+# the new owner will gain protected status.
+
+cpt_undo_partition = {
+    category = influence
+    # alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    # alert_tooltip = <key>           # The localisation key to display in the alert tooltip. Optional.
+    require_acceptance = no
+
+    is_visible = {
+		ai = no
+		cpt_cheats_allowed = yes
+        FROM = {
+			is_subject_of = root
+			is_colonial_nation = yes
+		}
+    }
+
+    is_allowed = {
+		cpt_cheats_allowed = yes
+		FROM = {
+			# ai = yes # should player colonies be messed with so easily?
+			cpt_not_player_protected = { nation = this }
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_is_not_protected_tt
+				NOT = { has_country_flag = colony_p_protected }
+			}
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_already_partitioned_tt
+				has_country_flag = cpt_prev_partitioned
+			}
+		}
+    }
+
+	# Spaghetti code ; be warned
+
+    on_accept = {
+		custom_tooltip = cpt_undo_partitioning_tt
+
+		hidden_effect = {
+			set_global_flag = colony_p_ongoing
+			# this will be the cause of a LOT of lag!
+			every_province = {
+				limit = {
+					NOT = { is_capital_of = root }
+					has_province_flag = cpt_prev_@FROM
+					owner = {
+						ai = yes
+						is_subject_of = root
+						is_colonial_nation = yes
+
+						cpt_not_player_protected = { nation = this }
+						NOT = { has_country_flag = colony_p_protected }
+					}
+				}
+				# for any active save games using older mod version. prevent glitches
+				clr_province_flag = territory_core
+				clr_province_flag = full_core
+
+				# remember core status
+				if = {
+					limit = { is_territorial_core = owner }
+					set_province_flag = territory_core
+				}
+				else_if = {
+					limit = { is_core = owner }
+					set_province_flag = full_core
+				}
+
+				# remember owner
+				owner = {
+					save_event_target = cpt_prev_owner
+					
+					# flag colony as partitioned already, used only for allowing the undo action
+					set_country_flag = cpt_prev_partitioned
+					prev = {
+						set_province_flag = cpt_prev_@PREV
+					}
+				}
+
+				if = {
+					limit = { has_construction = core }
+					cancel_construction = yes
+				}
+
+				remove_core = owner
+				cede_province = FROM
+
+				# previous owner regains cores
+				if = {
+					limit = { cpt_claims_3 = yes }
+					if = {
+						limit = { has_province_flag = territory_core }
+						add_territorial_core = event_target:cpt_prev_owner
+					}
+					if = {
+						limit = { has_province_flag = full_core }
+						add_core = event_target:cpt_prev_owner
+					}
+					add_claim = event_target:cpt_prev_owner
+				}
+				# previous owner gains claims
+				if = {
+					limit = { cpt_claims_2 = yes }
+					add_claim = event_target:cpt_prev_owner
+				}
+
+				# players always get the best treatment
+				if = {
+					limit = {
+						event_target:cpt_prev_owner = { OR = { was_player = yes ai = no } }
+					}
+					if = {
+						limit = { has_province_flag = territory_core }
+						add_territorial_core = event_target:cpt_prev_owner
+					}
+					if = {
+						limit = { has_province_flag = full_core }
+						add_core = event_target:cpt_prev_owner
+					}
+					# claim added after core. if core expires claim will remain
+					add_permanent_claim = event_target:cpt_prev_owner
+				}
+
+				# cleanup
+				clr_province_flag = territory_core
+				clr_province_flag = full_core
+			}
+			clr_global_flag = colony_p_ongoing
+		}
+		
+		hidden_effect = {
+			FROM = { save_global_event_target_as = cpt_set_protection_from }
+		}
+		country_event = { id = cpt.50 }
+	}
+}

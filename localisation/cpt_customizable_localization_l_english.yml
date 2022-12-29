@@ -1,0 +1,26 @@
+﻿l_english:
+# custom localisation
+ cpt_core_setting_loc1: "Translate §YCores§!"
+ cpt_core_setting_loc2: "Skip §YUncored Colonies§!"
+ cpt_core_setting_loc3: "§M(Cheats)§! §YFull Core§! ALL Provinces Ceded"
+
+ cpt_claims_setting_loc1: "§RLose§! All §YCores§!"
+ cpt_claims_setting_loc2: "§GGain§! §YClaims§!"
+ cpt_claims_setting_loc3: "§GKeep§! All §YCores§! & §GGain§! §YClaims§!"
+
+ cpt_player_setting_enabled: "§GEnabled§!"
+ cpt_player_setting_disabled: "§RDisabled§!"
+#    fail menu
+ cpt_mp_loc1: "\nGame is Multi-Player."
+ cpt_mp_loc2: ""
+ cpt_delay_loc1: "\nThe World Was Partitioned Recently!"
+ cpt_delay_loc2: ""
+
+
+ cpt_undo_warning_loc1: ""
+
+# custom localisation
+# may break everything else so its here at the bottom
+ cpt_no_cheat_2: "(£no£ £ironman£)"
+ cpt_no_cheat_1: "(£no£ :\\>)"
+ cpt_no_cheat_3: "(£yes£ :\\>)"

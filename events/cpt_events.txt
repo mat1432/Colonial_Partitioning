@@ -1,0 +1,590 @@
+namespace = cpt
+
+# main menu
+country_event = {
+	id = cpt.1
+	title = "cpt_1_title"
+	desc = "cpt_1_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+		}
+	}
+
+	option = {
+		name = "cpt_exit"
+		ai_chance = { factor = 100 } # sometimes mp gaves save and reopen. if ai is in control, it will exit immediately
+	}
+
+	option = {
+		name = "cpt_start"
+		trigger = {
+			cpt_no_ongoing_activity = yes
+			cpt_mp_delay_expired = yes
+		}
+		ai_chance = { factor = 0 }
+		highlight = yes
+		custom_tooltip = cpt_start_tt
+		hidden_effect = {
+			if = {
+				limit = { cpt_mp_delay_active = yes }
+				country_event = { id = cpt.97 } # fail event
+			}
+			else_if = {
+				limit = { cpt_ongoing_activity = yes }
+				country_event = { id = cpt.97 } # fail event
+			}
+			else = {
+				cpt_start = yes
+			}
+		}
+	}
+	option = {
+		name = "cpt_start_x"
+		trigger = {
+			OR = {
+				cpt_ongoing_activity = yes
+				cpt_mp_delay_active = yes
+			}
+		}
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_start_delayed_tt
+		hidden_effect = { country_event = { id = cpt.1001 } }
+	}
+
+	option = {
+		name = "cpt_open_settings"
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = cpt.2
+		}
+	}
+
+	option = {
+		name = "cpt_reset_protection"
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_reset_protection_tt
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				clr_country_flag = colony_p_protected
+			}
+		}
+		hidden_effect = { country_event = { id = cpt.1001 } }
+	}
+}
+
+# settings menu
+country_event = {
+	id = cpt.2
+	title = "cpt_2_title"
+	desc = "cpt_2_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+		}
+	}
+
+	option = {
+		name = "cpt_back"
+		ai_chance = { factor = 100 }
+		country_event = {
+			id = cpt.1
+		}
+	}
+
+	option = {
+		name = "cpt_open_core_settings"
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = cpt.3
+		}
+	}
+
+	option = {
+		name = "cpt_open_player_settings"
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = cpt.4
+		}
+	}
+
+	option = {
+		name = "cpt_open_claims_settings"
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = cpt.5
+		}
+	}
+	
+	option = {
+		name = "cpt_reset_protection"
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_reset_protection_tt
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation = yes
+				}
+				clr_country_flag = colony_p_protected
+			}
+		}
+		hidden_effect = { country_event = { id = cpt.1002 } }
+	}
+}
+
+country_event = {
+	id = cpt.3
+	title = "cpt_3_title"
+	desc = "cpt_3_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		country_event = {
+			id = cpt.2
+		}
+	}
+
+	# there are 3 options
+	# 1 = duplicate core status
+	#     when annexed: full cores, territorial cores & no cores, will be perfectly replicated
+	# 2 = skip nations with uncored provinces
+	#     any colonies with provinces without a core, will be skipped
+	#     when annexed: full cores & territorial cores, will be perfectly replicated
+	# 3 = cheaty full core all provinces
+	#     when annexed: all provinces give you a full core, regardless what the colony had
+	#     I have disabled this for ironman saves
+
+	# duplicate core status
+	option = {
+		name = "cpt_3_1"
+		trigger = { cpt_core_1 = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_core_1_tt
+		cpt_core_set = { option = 1 }
+	}
+	option = {
+		name = "cpt_3_1_s"
+		trigger = { cpt_core_1 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_core_1_tt
+		cpt_core_set = { option = 1 }
+	}
+
+	# skip nations with uncored provinces
+	option = {
+		name = "cpt_3_2"
+		trigger = { cpt_core_2 = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_core_2_tt
+		cpt_core_set = { option = 2 }
+	}
+	option = {
+		name = "cpt_3_2_s"
+		trigger = { cpt_core_2 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_core_2_tt
+		cpt_core_set = { option = 2 }
+	}
+
+	# cheaty full core all provinces
+	option = {
+		name = "cpt_3_3"
+		trigger = {
+			cpt_cheats_allowed = yes
+			cpt_core_3 = no
+		}
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_core_3_tt
+		cpt_core_set = { option = 3 }
+	}
+	option = {
+		name = "cpt_3_3_x"
+		trigger = {
+			cpt_cheats_allowed = no
+			cpt_core_3 = no
+		}
+		ai_chance = { factor = 0 }
+		custom_tooltip = colony_p_ironman
+		custom_tooltip = cpt_core_3_tt
+	}
+
+	option = {
+		name = "cpt_3_3_s"
+		trigger = { cpt_core_3 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_core_3_tt
+		cpt_core_set = { option = 3 }
+	}
+}
+
+
+country_event = {
+	id = cpt.4
+	title = "cpt_4_title"
+	desc = "cpt_4_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		country_event = {
+			id = cpt.2
+		}
+	}
+
+	option = {
+		name = "cpt_back"
+		ai_chance = { factor = 100 }
+	}
+
+	# default is ENABLED
+	# may get confusing:
+	# no flag = players are protected
+	# colony_p_players_x flag = players are not protected.
+
+	option = { # Disable Player protection
+		name = "cpt_4_x"
+		trigger = { cpt_player_protection_enabled = yes }
+		ai_chance = { factor = 0 }
+		highlight = yes
+		custom_tooltip = colony_p_protect_players_x_tt
+		hidden_effect = {
+			set_country_flag = colony_p_players_x
+		}
+	}
+	option = { # Enable Player protection
+		name = "cpt_4_e"
+		trigger = { cpt_player_protection_enabled = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = colony_p_protect_players_tt
+		hidden_effect = {
+			clr_country_flag = colony_p_players_x
+		}
+	}
+}
+
+
+country_event = {
+	id = cpt.5
+	title = "cpt_5_title"
+	desc = "cpt_5_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		custom_tooltip = cpt_claims_player_tt
+		country_event = {
+			id = cpt.2
+		}
+	}
+
+	# there are 3 options for all provinces lost
+	# 1 = previous owner loses all cores
+	# 2 = previous owner gains 50 year claims
+	# 3 = previous owner keeps all cores
+
+	# regardless of option, if colony was EVER a player. they keep all cores and gain permanent claims
+
+	# loses all cores
+	option = {
+		name = "cpt_5_1"
+		trigger = { cpt_claims_1 = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_claims_1_tt
+		cpt_claims_set = { option = 1 }
+	}
+	option = {
+		name = "cpt_5_1_s"
+		trigger = { cpt_claims_1 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_claims_1_tt
+		cpt_claims_set = { option = 1 }
+	}
+
+	# gains 50 year claims
+	option = {
+		name = "cpt_5_2"
+		trigger = { cpt_claims_2 = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_claims_2_tt
+		cpt_claims_set = { option = 2 }
+	}
+	option = {
+		name = "cpt_5_2_s"
+		trigger = { cpt_claims_2 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_claims_2_tt
+		cpt_claims_set = { option = 2 }
+	}
+
+	# keeps all cores
+	option = {
+		name = "cpt_5_3"
+		trigger = { cpt_claims_3 = no }
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_claims_3_tt
+		cpt_claims_set = { option = 3 }
+	}
+
+	option = {
+		name = "cpt_5_3_s"
+		trigger = { cpt_claims_3 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_claims_3_tt
+		cpt_claims_set = { option = 3 }
+	}
+}
+
+
+
+country_event = {
+	id = cpt.50
+	title = "cpt_50_title"
+	desc = "cpt_50_desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+			clear_global_event_target = cpt_set_protection_from
+		}
+	}
+
+	option = {
+		name = "cpt_50_protect"
+		trigger = { cpt_player_protection_enabled = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_protect_colony_tooltip
+		hidden_effect = {
+			event_target:cpt_set_protection_from = {
+				set_country_flag = colony_p_protected
+			}
+		}
+	}
+
+	option = {
+		name = "cpt_exit"
+		ai_chance = { factor = 0 }
+	}
+}
+
+####################################################################################################
+# Setup & Misc Events
+
+# question of cheats
+country_event = {
+	id = cpt.98
+	title = "cpt_98_title"
+	desc = "cpt_98_desc"
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+		}
+		# country_event = {
+		# 	id = cpt.99
+		# 	days = 1
+		# }
+	}
+
+	option = {
+		name = "cpt_98_nocheat"
+		highlight = yes
+		custom_tooltip = cpt_98_nocheat_tt
+		hidden_effect = {
+			set_global_flag = colony_p_nocheat
+			clr_global_flag = colony_p_cheats
+		}
+	}
+	option = {
+		name = "cpt_98_normal"
+		custom_tooltip = cpt_98_normal_tt
+		hidden_effect = {
+			clr_global_flag = colony_p_nocheat
+			clr_global_flag = colony_p_cheats
+		}
+	}
+	option = {
+		name = "cpt_98_cheat"
+		custom_tooltip = cpt_98_cheat_tt
+		hidden_effect = {
+			clr_global_flag = colony_p_nocheat
+			set_global_flag = colony_p_cheats
+		}
+	}
+}
+# enable server spam prevention delays
+country_event = {
+	id = cpt.99
+	title = "cpt_99_title"
+	desc = "cpt_99_desc"
+
+	fire_only_once = yes
+
+	# is_triggered_only = yes
+	trigger = {
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+		}
+	}
+
+	option = {
+		name = "cpt_99_sp"
+		custom_tooltip = cpt_99_sp_tt
+		hidden_effect = {
+			clr_global_flag = colony_p_mp
+		}
+	}
+	option = {
+		name = "cpt_99_mp"
+		highlight = yes
+		custom_tooltip = cpt_99_mp_tt
+		hidden_effect = {
+			set_global_flag = colony_p_mp
+		}
+	}
+}
+
+# fail
+country_event = {
+	id = cpt.97
+	title = "cpt_97_title"
+	desc = "cpt_97_desc"
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = colony_p_menu
+			cpt_validate = yes
+		}
+	}
+	after = {
+		hidden_effect = {
+			clr_country_flag = colony_p_menu
+		}
+	}
+
+	option = {
+		name = "cpt_exit"
+		ai_chance = { factor = 100 }
+		highlight = yes
+	}
+	option = {
+		name = "cpt_back"
+		highlight = yes
+		country_event = {
+			id = cpt.1
+		}
+	}
+}
+
+####################################################################################################
+# Recursive Events
+
+country_event = {
+	id = cpt.1001
+	title = "cpt_r_t"
+	desc = "cpt_r_d"
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "cpt_r_a"
+		ai_chance = { factor = 100 }
+		hidden_effect = { set_country_flag = colony_p_menu }
+		country_event = { id = cpt.1 }
+	}
+}
+country_event = {
+	id = cpt.1002
+	title = "cpt_r_t"
+	desc = "cpt_r_d"
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "cpt_r_a"
+		ai_chance = { factor = 100 }
+		hidden_effect = { set_country_flag = colony_p_menu }
+		country_event = { id = cpt.2 }
+	}
+}

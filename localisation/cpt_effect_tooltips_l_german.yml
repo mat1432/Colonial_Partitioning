@@ -1,0 +1,36 @@
+﻿l_german:
+
+##Übersetzt von Thylon##
+
+# tooltips
+colony_p_ironman: "§RNicht erlaubt bei Ironman-Saves ODER wenn Cheats deaktiviert sind!§!"
+
+# effect tooltips
+cpt_start_tt: "Starten! Dies führt zu einem SCHWEREN Lag.\n"
+cpt_start_delayed_tt: "Ein anderer §YSpieler§! hat dies innerhalb der letzten §Y30 Tage§! benutzt!"
+
+cpt_set_protection_tt: "Sie §GerhaltenG! den §Ygeschützter§! Status, Kolonietrennungen werden ihnen niemals ihr Land entziehen!\n§YKann jederzeit widerrufen werden.§!"
+cpt_unset_protection_tt: "Sie werden den §Ygeschützten§! Status §Rverlieren§!!"
+cpt_reset_protection_tt: "§REntfernt§! den §YGeschützten§! Status von ALLEN unseren §YKolonialen Untertanen§!!"
+cpt_annex_colony_tt: "Folgt der gleichen Logik wie die Kolonieaufteilung! Die gesamte Kolonie wird von uns annektiert!\nWir werden NICHT ihre Schatzkammer, Armeen, Anführer oder Flotten übernehmen!"
+
+colony_p_protect_players_x_tt: "Alle Kolonien, die jemals von einem §YSpieler§! kontrolliert waren, sind derzeit geschützt!\n Nicht zu verwechseln mit dem speziellen §YSchutz§!!"
+colony_p_protect_players_tt: "Keine Kolonien, die JEMALS von einem §YSpieler§! kontrolliert waren, sind geschützt!\n Nicht zu verwechseln mit dem speziellen §YSchutz§!!"
+
+cpt_core_1_tt: "Auswirkungen:\nAlle Kolonien werden betroffen sein.\n§YVollständige Kernprovinzen§!, §!Territoriale Kernprovinzen§! & §YNicht Kernprovinzen§! werden repliziert."
+cpt_core_2_tt: "Auswirkungen:\nNicht Kernprovinzen von Kolonien werden übersprungen.\n§YVollständige Kernprovinzen§! & §YTerritoriale Kernprovinzen§! werden repliziert."
+cpt_core_3_tt: "Auswirkungen:\nAlle Kolonien werden betroffen sein.\nWir §Gerhalten§! §YVollständige Kernprovinzen§! in jeder an uns abgetretenen Provinz!"
+# for individual colony annexation
+cpt_core_1_ne_tt: "Auswirkungen:\n§YVollständige Kernprovinzen§!, §YTerritoriale Kernprovinzen§! & §YNicht Kernprovinzen§! werden repliziert."
+cpt_core_2_ne_tt: "Auswirkungen: §YVollständige Kernprovinzen§! und §YTerritoriale Kernprovinzen§! werden repliziert."
+cpt_core_3_ne_tt: "Auswirkungen:\nWir §Gerhalten§! §YVollständige Kernprovinzen§! in jeder an uns abgetretenen Provinz!"
+
+cpt_protect_colony_tooltip: "§Y[cpt_set_protection_from.GetName]§! wird §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+
+# for undo partitioning
+cpt_undo_partitioning_tt: "Findet alle Provinzen in der Welt, die während der Aufteilung eingenommen wurden, und gibt sie zurück.\nDies gibt ihnen KEINE Kernprovinzen oder Ansprüche, sie müssen bei Bedarf neue Kernprovinzen erstellen!\nProvinzen können aktiven Spielern NICHT weggenommen werden!\nFolgt der gleichen Logik wie alle Aufteilungsfunktionen.\nWenn die Kolonie annektiert wird oder sich in einen formbare Nation ändert: Wir verlieren alle Ländereien, die als eingenommen anerkannt werden.\n§ODies führt zu einem SCHWEREN Lag!§!"
+
+cpt_claims_1_tt: "\nDer Vorbesitzer §Rverliert§! alle §YKernprovinzen§!"
+cpt_claims_2_tt: "\nDer Vorbesitzer §Gerhält§! §YAnsprüche§!"
+cpt_claims_3_tt: "\nDer Vorbesitzer wird seine §YKernprovinzen§! §Gbehalten§! (einschließlich §YTerritoriale Kernprovinzen§!)"
+cpt_claims_player_tt: "\n§YSpieler-Kolonien§! werden IMMER Ihre §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!"

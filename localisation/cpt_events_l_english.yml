@@ -1,0 +1,69 @@
+﻿l_english:
+# events
+ cpt_exit: "Exit"
+ cpt_back: "Back/Cancel"
+#    setup events
+ cpt_98_title: "<CP> Colony Partition - Setup"
+ cpt_98_desc: "This Mod allows any §YPlayer§! to seriously game the system or in some cases flat out cheat.\nIf this is a multiplayer game, consider disabling cheats!\n\nBasically, when a colony is annexed, should you get full cores regardless or respect coring time!"
+ cpt_98_nocheat: "§Y(Override)§! §ODisable§! §YCheats§!"
+ cpt_98_normal: "§Y(Normal)§! §ODisable§! §YCheats§! on §YIronman Saves§!"
+ cpt_98_cheat: "§Y(Override)§! CHEATS! CHEATS! .. Cough .. I mean im just testing.."
+ cpt_99_title: "<CP> Colony Partition - Is this Multiplayer?"
+ cpt_99_desc: "If this save is intended or used for multipleyer, please specify so!\n\nBasically, do you want to have a spam delay? (30 Day global delay)"
+ cpt_99_sp: "Singleplayer"
+ cpt_99_mp: "Multiplayer (Spam Delay)"
+
+#    main menu
+ cpt_1_title: "<CP> Colony Partition - Main Menu"
+ cpt_1_desc: "To Access §YProtection Mechanics§! for specific §YColonies§!, see the §YInfluence§! Actions in the §YDiplomacy Screen§!\nNote for Multiplayer: §YPlayers§! will generally recieve Default §YProtection§!, and will ALWAYS retain §YCores§!!\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_start: "Begin §O(May Cause Serious Lag)§!"
+ cpt_start_x: "Begin §O(Not Available Right Now)§!"
+ cpt_open_settings: "§MOpen Mod Settings§!"
+
+ cpt_97_title: "Colony Partition - Fail"
+ cpt_97_desc: "Something happened and your request could not be fulfilled!\nTry again later!\n\nLikely known causes (We might not know!):[Root.GetColonyMP][Root.GetColonyMPDelay]"
+
+#    settings menu
+ cpt_2_title: "Colony Partition - Settings Menu"
+ cpt_2_desc: "Settings Menu\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_open_core_settings: "§MOpen Core Translation Settings§!"
+ cpt_open_player_settings: "§MOpen Player Protection Settings§!"
+ cpt_open_claims_settings: "§MOpen Previous Owner Claims Settings§!"
+ cpt_reset_protection: "§OReset ALL Colony Protections§!"
+
+#    core settings menu
+ cpt_3_title: "Colonial Partition - Colony Core Settings"
+ cpt_3_desc: "When transacting §YCores§!, how should they be processed?\n\nThere are 3 options:\n 1 = We Translate §YCores§!\n     §YFull Cores§!, §YTerritorial Cores§! & §YNo Cores§!, will be perfectly transferred to us.\n 2 = We Skip §YUncored Colonies§! §M(Default)§!\n     Any Colonies with missing §YCores§!, will be skipped\n     §YFull Cores§! & §YTerritorial Cores§!, will be perfectly transferred to us.\n 3 = We §YFull Core Everything§! §M(Cheats)§!\n     We §GGain§! §YFull Cores§! on all provinces ceded to us!\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]"
+ cpt_3_1: "Translate §YCores§!"
+ cpt_3_1_s: "Translate §YCores§! §M(Selected)§!"
+ cpt_3_2: "Skip §YUncored Colonies§!"
+ cpt_3_2_s: "Skip §YUncored Colonies§! §M(Selected)§!"
+ cpt_3_3: "§M(Cheats)§! §YFull Core§! ALL Provinces Ceded! [Root.GetColonyNoCheat]"
+ cpt_3_3_x: "§M(Cheats)§! §YFull Core§! ALL Provinces Ceded! [Root.GetColonyNoCheat]"
+ cpt_3_3_s: "§M(Cheats)§! §YFull Core§! ALL Provinces Ceded! §M(Selected)§!"
+
+#    player protection settings menu
+ cpt_4_title: "Colonial Partition - Player Protection Settings"
+ cpt_4_desc: "Any colonies that were EVER a §YPlayer§!, can get §YProtection§! from partitioning. By default §YProtection§! is §GEnabled§!.\n\nPlayer Protection Is: [Root.GetColonyPlayerSetting]"
+ cpt_4_x: "§O(DISABLE)§! §YUnprotect§! §YPlayer§! Colonies §M(Selected)§!"
+ cpt_4_e: "§G(ENABLE)§! §YProtect§! §YPlayer§! Colonies"
+
+#    previous owner claims settings menu
+ cpt_5_title: "Colonial Partition - Previous Owner Claims Settings"
+ cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 3 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will §GKeep§! any §YTerritorial Cores§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_5_1: "§RLose§! All §YCores§!"
+ cpt_5_1_s: "§RLose§! All §YCores§! §M(Selected)§!"
+ cpt_5_2: "§GGain§! §YClaims§!"
+ cpt_5_2_s: "§GGain§! §YClaims§! §M(Selected)§!"
+ cpt_5_3: "§GKeep§! All §YCores§! & §GGain§! §YClaims§!"
+ cpt_5_3_s: "§GKeep§! All §YCores§! & §GGain§! §YClaims§! §M(Selected)§!"
+
+# protect colony event alternative
+ cpt_50_title: "Set Colony Protection"
+ cpt_50_desc: "§Y[cpt_set_protection_from.GetName]§! will §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
+ cpt_50_protect: "Set As §YProtected§!"
+
+# Recursive Events. Always hidden
+ cpt_r_t: "Recursive Event"
+ cpt_r_d: ""
+ cpt_r_a: ""

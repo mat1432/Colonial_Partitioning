@@ -1,0 +1,19 @@
+country_decisions = {
+	colonial_partition = {
+		potential = {
+			ai = no
+			any_subject_country = { is_colonial_nation = yes }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = cpt_menu_open
+				NOT = { has_country_flag = colony_p_menu }
+			}
+		}
+		effect = {
+			country_event = {
+				id = cpt.1
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+cpt_validate = {
+	hidden_effect = {
+		if = { # for users who have an active game, this will fix them not having the flag
+			limit = { NOT = { has_global_flag = colony_p_delay } }
+			set_global_flag = colony_p_delay
+		}
+		if = { # to fix any save glitches. if flag has been active for a while, remove it
+			limit = {
+				has_global_flag = colony_p_ongoing
+				had_global_flag = {
+					flag = colony_p_ongoing
+					days = 5
+				}
+			}
+			clr_global_flag = colony_p_ongoing
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = colony_p_setup }
+			}
+			set_variable = {
+				which = colony_p_core
+				value = 2
+			}
+			set_variable = {
+				which = colony_p_claims
+				value = 2
+			}
+			set_country_flag = colony_p_setup
+		}
+	}
+}
+
+cpt_core_set = {
+	hidden_effect = {
+		ROOT = {
+			set_variable = {
+				which = colony_p_core
+				value = $option$
+			}
+		}
+	}
+}
+
+cpt_claims_set = {
+	hidden_effect = {
+		ROOT = {
+			set_variable = {
+				which = colony_p_claims
+				value = $option$
+			}
+		}
+	}
+}
+
+
+cpt_start = {
+	hidden_effect = {
+		set_global_flag = colony_p_ongoing
+		clr_global_flag = colony_p_delay
+	}
+
+	# tooltips
+	if = {
+		limit = { cpt_core_1 = yes }
+		custom_tooltip = cpt_core_1_tt
+	}
+	else_if = {
+		limit = { cpt_core_2 = yes }
+		custom_tooltip = cpt_core_2_tt
+	}
+	else_if = {
+		limit = { cpt_core_3 = yes }
+		custom_tooltip = cpt_core_3_tt
+	}
+	
+	if = {
+		limit = { cpt_claims_1 = yes }
+		custom_tooltip = cpt_claims_1_tt
+	}
+	else_if = {
+		limit = { cpt_claims_2 = yes }
+		custom_tooltip = cpt_claims_2_tt
+	}
+	else_if = {
+		limit = { cpt_claims_3 = yes }
+		custom_tooltip = cpt_claims_3_tt
+	}
+	custom_tooltip = cpt_claims_player_tt
+
+	hidden_effect = {
+		every_subject_country = {
+			limit = {
+				ai = yes
+				is_colonial_nation = yes
+				cpt_not_player_protected = { nation = this }
+				NOT = { has_country_flag = colony_p_protected }
+
+				if = { # skip uncored colonies
+					limit = { cpt_core_2 = yes }
+					NOT = {
+						any_owned_province = {
+							NOT = { is_core = PREV }
+						}
+					}
+				}
+			}
+
+			# flag colony as partitioned already, used only for allowing the undo action
+			set_country_flag = cpt_prev_partitioned
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = capital }
+				}
+				#recognise this province as taken from this colony
+				set_province_flag = cpt_prev_@PREV
+
+				# for any active save games using older mod version. prevent glitches
+				clr_province_flag = territory_core
+				clr_province_flag = full_core
+
+				# remember core status
+				if = {
+					limit = { is_territorial_core = PREV }
+					set_province_flag = territory_core
+				}
+				else_if = {
+					limit = { is_core = PREV }
+					set_province_flag = full_core
+				}
+
+
+				if = {
+					limit = { cpt_core_3 = yes }
+					add_core = ROOT
+				}
+				else = {
+					if = {
+						limit = { is_territorial_core = PREV }
+						add_territorial_core = ROOT
+					}
+					else_if = {
+						limit = { is_core = PREV }
+						add_core = ROOT
+					}
+					else_if = {
+						limit = { NOT = { is_core = PREV } }
+						if = {
+							limit = { has_construction = core }
+							cancel_construction = yes
+						}
+					}
+				}
+
+				remove_core = PREV
+				cede_province = ROOT
+
+
+				# previous owner regains cores
+				if = {
+					limit = { cpt_claims_3 = yes }
+					if = {
+						limit = { has_province_flag = territory_core }
+						add_territorial_core = PREV
+					}
+					if = {
+						limit = { has_province_flag = full_core }
+						add_core = PREV
+					}
+					add_claim = PREV
+				}
+				# previous owner gains claims
+				if = {
+					limit = { cpt_claims_2 = yes }
+					add_claim = PREV
+				}
+
+				# players always get the best treatment
+				if = {
+					limit = {
+						PREV = { OR = { was_player = yes ai = no } }
+					}
+					if = {
+						limit = { has_province_flag = territory_core }
+						add_territorial_core = PREV
+					}
+					if = {
+						limit = { has_province_flag = full_core }
+						add_core = PREV
+					}
+					# claim added after core. if core expires claim will remain
+					add_permanent_claim = PREV
+				}
+
+				# cleanup
+				clr_province_flag = territory_core
+				clr_province_flag = full_core
+			}
+		}
+	}
+
+	hidden_effect = {
+		clr_global_flag = colony_p_ongoing
+		set_global_flag = colony_p_delay
+	}
+}

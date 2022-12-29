@@ -1,0 +1,29 @@
+﻿l_german:
+
+##Übersetzt von Thylon##
+
+# custom localisation
+cpt_core_setting_loc1: "§YKernprovinzen§! übersetzen"
+cpt_core_setting_loc2: "Überspringt §YNicht Kernkolonien§!"
+cpt_core_setting_loc3: "§M(Cheats)§! §YVollständige Kernprovinzen§! ALLE abgetretenen Provinzen"
+
+cpt_claims_setting_loc1: "§RVerliert§! alle §YKernprovinzen§!"
+cpt_claims_setting_loc2: "§GErhaltet§! §YAnsprüche§!"
+cpt_claims_setting_loc3: "§GBehaltet§! alle §YKernprovinzen§! & §Gerhaltet§! §YAnsprüche§!"
+
+cpt_player_setting_enabled: "§GAktiviert§!"
+cpt_player_setting_disabled: "§RDeaktiviert§!"
+#    fail menu
+cpt_mp_loc1: "\nSpiel ist Mehrspieler."
+cpt_mp_loc2: ""
+cpt_delay_loc1: "\nDie Welt wurde kürzlich aufgeteilt!"
+cpt_delay_loc2: ""
+
+# custom localisation
+cpt_undo_warning_loc1: ""
+
+# custom localisation
+# may break everything else so its here at the bottom
+cpt_no_cheat_2: "(£no£ £ironman£)"
+cpt_no_cheat_1: "(£no£ :\\>)"
+cpt_no_cheat_3: "(£yes£ :\\>)"

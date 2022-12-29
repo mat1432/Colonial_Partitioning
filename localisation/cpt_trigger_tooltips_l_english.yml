@@ -1,0 +1,18 @@
+﻿l_english:
+# tooltips
+#   trigger tooltips
+ cpt_menu_open: "Colony Partition menu is NOT open!"
+ cpt_not_player_protected_tt: "Was NEVER a §YPlayer§!!"
+ cpt_is_player_protected_tt: "Is or Was a §YPlayer§!"
+ cpt_cheats_allowed_tt: "Cheats are allowed"
+ cpt_ongoing_activity_tt: "There is Ongoing Partitioning!"
+ cpt_no_ongoing_activity_tt: "There is NO Ongoing Partitioning"
+ cpt_delay_active_tt: "The World Was Partitioned Recently!"
+ cpt_delay_expired_tt: "The World Has NOT Been Partitioned Recently"
+
+ cpt_player_potection_enabled_tt: "§YPlayer Protction§! is §GEnabled§!"
+
+ cpt_is_protected_tt: "Colony is §YProtected§!"
+ cpt_is_not_protected_tt: "Colony is NOT §YProtected§!"
+
+ cpt_already_partitioned_tt: "Colony has been Partitioned Before!"

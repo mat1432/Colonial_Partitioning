@@ -1,0 +1,28 @@
+﻿l_german:
+
+##Übersetzt von Thylon##
+
+# new diplomatic actions
+cpt_protect_colony: "<CP> Schutz vor Kolonieaufteilung"
+cpt_protect_colony_title: "<CP> Schutz vor Kolonieaufteilung"
+cpt_protect_colony_desc: "Sie §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+cpt_protect_colony_tooltip: "Sie §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+cpt_protect_colony_alert_tooltip: "<CP> Schutz vor Kolonieaufteilung"
+
+cpt_unprotect_colony: "<CP> Kein Schutz vor Kolonieaufteilung"
+cpt_unprotect_colony_title: "<CP> Kein Schutz vor Kolonieaufteilung"
+cpt_unprotect_colony_desc: "Sie §Rverlieren§! Ihren §YGeschützten§! Status!"
+cpt_unprotect_colony_tooltip: "Sie §Rverlieren§! Ihren §YGeschützten§! Status!"
+cpt_unprotect_colony_alert_tooltip: "<CP> Kein Schutz vor Kolonieaufteilung"
+
+cpt_annex_colony: "<CP> Kolonieannexion"
+cpt_annex_colony_title: "<CP> Kolonieannexion"
+cpt_annex_colony_desc: "Folgt der gleichen Logik wie die Kolonieaufteilung! Die gesamte Kolonie wird von uns annektiert!\nWir werden NICHT ihre Schatzkammer, Armeen, Anführer oder Flotten erben!"
+cpt_annex_colony_tooltip: "Folgt der gleichen Logik wie die Kolonieaufteilung! Die gesamte Kolonie wird von uns annektiert!\nWir werden NICHT ihre Schatzkammer, Armeen, Anführer oder Flotten erben!"
+cpt_annex_colony_alert_tooltip: "<CP> Kolonieannexion"
+
+cpt_undo_partition: "<CP> Kolonieaufteilung rückgängig machen"
+cpt_undo_partition_title: "<CP> Kolonieaufteilung rückgängig machen"
+cpt_undo_partition_desc: "Findet alle Provinzen in der Welt, die während der Aufteilung eingenommen wurden, und gibt sie zurück.\nDies gibt ihnen KEINE Kernprovinzen oder Ansprüche, sie müssen bei Bedarf neue Kernprovinzen erstellen!\nProvinzen können aktiven Spielern NICHT weggenommen werden!\nFolgt der gleichen Logik wie alle Aufteilungsfunktionen.\nWenn die Kolonie annektiert wird oder sich in einen formbare Nation ändert: Wir verlieren alle Ländereien, die als eingenommen anerkannt werden.\n§ODies führt zu einem SCHWEREN Lag!§!"
+cpt_undo_partition_tooltip: "Findet alle Provinzen in der Welt, die während der Aufteilung eingenommen wurden, und gibt sie zurück.\nDies gibt ihnen KEINE Kernprovinzen oder Ansprüche, sie müssen bei Bedarf neue Kernprovinzen erstellen!\nProvinzen können aktiven Spielern NICHT weggenommen werden!\nFolgt der gleichen Logik wie alle Aufteilungsfunktionen.\nWenn die Kolonie annektiert wird oder sich in einen formbare Nation ändert: Wir verlieren alle Ländereien, die als eingenommen anerkannt werden.\n§ODies führt zu einem SCHWEREN Lag!§!"
+cpt_undo_partition_alert_tooltip: "<CP> Kolonieaufteilung rückgängig machen"

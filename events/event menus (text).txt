@@ -1,0 +1,47 @@
+
+#cpt.1
+To Access §YProtection Mechanics§! for specific §YColonies§!, see the §YInfluence§! Actions in the §YDiplomacy Screen§!
+Note for Multiplayer: §YPlayers§! will generally recieve Default §YProtection§!, and will ALWAYS retain §YCores§!!
+
+Current Core Setting: [Root.GetColonyCoreSetting]
+Player Protection Is: [Root.GetColonyPlayerSetting]
+Previous Owners Will: [Root.GetColonyClaimsSetting]
+
+#cpt.2
+Settings Menu
+
+Current Core Setting: [Root.GetColonyCoreSetting]
+Player Protection Is: [Root.GetColonyPlayerSetting]
+Previous Owners Will: [Root.GetColonyClaimsSetting]
+
+#cpt.3
+When transacting §YCores§!, how should they be processed?
+
+There are 3 options:
+ 1 = We Translate §YCores§!
+     §YFull Cores§!, §YTerritorial Cores§! & §YNo Cores§!, will be perfectly transferred to us.
+ 2 = We Skip §YUncored Colonies§! §M(Default)§!
+     Any Colonies with missing §YCores§!, will be skipped
+     §YFull Cores§! & §YTerritorial Cores§!, will be perfectly transferred to us.
+ 3 = We §YFull Core Everything§! §M(Cheats)§!
+     We §GGain§! §YFull Cores§! on all provinces ceded to us!
+
+Current Core Setting: [Root.GetColonyCoreSetting]
+
+#cpt.4
+Any colonies that were EVER a §YPlayer§!, can get §YProtection§! from partitioning. By default §YProtection§! is §GEnabled§!.
+
+Player Protection Is: [Root.GetColonyPlayerSetting]
+
+#cpt.5
+When transacting §YCores§!, should the Previous Owner maintain their claims?
+
+There are 3 options:
+ 1 = They §RLose§! All §YCores§!
+ 2 = They §GGain§! Claims §M(Default)§!
+ 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!
+     Note: They will §GKeep§! any §YTerritorial Cores§!
+
+Note: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!
+
+Previous Owners Will: [Root.GetColonyClaimsSetting]

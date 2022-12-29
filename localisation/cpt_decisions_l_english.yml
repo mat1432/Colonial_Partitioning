@@ -1,0 +1,4 @@
+﻿l_english:
+# decisions
+ colonial_partition_title: "<CP> Colony Partition"
+ colonial_partition_desc: "Opens the Colony Partition menu, will fix any colonies expanding into another colonies' charter.\nCan also be used to conquer the new world and have your other colonies core it for you!"

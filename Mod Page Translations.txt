@@ -1,0 +1,64 @@
+### English
+# See readme.txt
+
+### German
+##Übersetzt von Thylon##
+[b]1.34.5 ; Dieser Mod muss nicht aktualisiert werden![/b]
+
+Diese Mod erlaubt es, alle Provinzen einer Kolonie zu entfernen, die sich in einer Kolonialregion außerhalb ihrer Hauptkolonialregion befinden!
+Nie wieder werden Brasilien und Kolumbien Peru komplett kolonisieren, wenn du einen Spielstand hast. Du kannst das Land einfach in deinen Besitz bringen und dann die Pause des Spiels aufheben, um das Koloniale Peru zu erschaffen!
+
+Dieser Mod ist komplett dynamisch und sollte mit so ziemlich jedem größeren Kartenmod kompatibel sein! Ja, es funktioniert mit Random New Worlds, Anbennar, BT, Ante Bellum, etc.
+
+Dies ist ein Cheat-Mod, aber es gibt einige Einstellungen, so dass es weniger ein Cheat ist und mehr wie ein Teil des Spiels.
+
+
+[h2]Dieser Mod ist:[/h2]
+[b]NICHT Achievement-kompatibel! (Ändert die Prüfsumme)[/b]
+Aber es wird bei einem Ironman-Spielstand funktionieren.
+
+
+Beim Spielstart wird ein Ereignis angezeigt, in dem eingestellt werden kann, ob die Cheat-Optionen aktiviert werden sollen oder nicht.
+
+[h1]Funktionen:[/h1]
+[h2]Diplomatische Aktionen:[/h2]
+-> Kann jede Kolonien sofort annektieren (erfordert die Aktivierung von Cheats beim Spielstart oder 'normal' bei Nicht-Ironman-Spielständen)
+-> Sie können Kolonien speziell vor Partitionierung/Sofortannexierung schützen
+-> Sie können die Partitionierung einer Kolonie rückgängig machen (funktioniert nur mit oder nach Update 1.0.5)
+-> Macht nur Gebiete rückgängig, die zu den eigenen Provinzen gehören (überträgt NICHT Ländereien, die zu Tributstaaten gehören)
+
+[h2]Partitioning:[/h2]
+-> Sie können festlegen, dass alle Kolonien, die noch nicht alle Provinzen zu mindestens einem Territorium entkernt haben, übersprungen werden (Nicht Kernprovinzen können keine Kolonien bilden)
+-> Sie können festlegen, dass der Kernprovinzen-Erstellung der Kolonie ignoriert wird und das alles zu Kernprovinzen gemacht werden (nicht erlaubt bei Ironman-Speicherständen und deaktiviert durch die Option "Keine Cheats" beim Spielstart)
+
+[h3]Partitionierung rückgängig machen:[/h3]
+-> Zugriff über die Diplomatische Aktion "Kolonieaufteilung rückgängig machen" in der Kategorie "Einflussnahmen".
+-> Gibt nur Provinzen, die dem Spieler (der die Aktion ausführt) oder einer seiner Kolonien gehören und die bei einer früheren Partitionierung weggenommen wurden, an die aktuelle Kolonie zurück.
+-> Folgt der gleichen Logik wie die normale Partitionierung, und alle Nationen, deren Land während dieses Prozesses genommen wird, werden als aufgeteilt gekennzeichnet.
+-> Funktioniert nur bei Kolonien, die nach Update 1.0.5 partitioniert wurden.
+-> [b]Der Rückgängig-Vorgang kann aktive Spieler-Nationen nicht beeinflussen![/b]
+
+[h2]Mehrspieler Sicherheit:[/h2]
+-> Standardmäßig werden alle Kolonien, die jemals von einem Spieler kontrolliert wurden, geschützt (kann deaktiviert werden)
+-> Jede Kolonie, die jemals von einem Spieler kontrolliert wurden, wird, wenn sie geteilt wird, immer ihre Kernprovinzen behalten (einschließlich Territorialer Kernprovinzen) und permanente Ansprüche auf alles verlorene Land erlangen.
+
+[h2]Kompatibilität bei Installation und Deinstallation:[/h2]
+-> Vorwärtskompatibilität:
+-> Der Mod bearbeitet oder ersetzt keine Dateien, er fügt nur Dateien hinzu. Sie sollte mit jedem zukünftigen Update vorwärtskompatibel sein!
+-> Rückwärtskompatibilität:
+-> Dasselbe wie oben... Der Mod ist kompatibel mit früheren Versionen, aber nicht zu weit zurück gehen, weil ich nicht sicher bin, wie weit es kompatibel ist
+-> Spielstand-Kompatibilität:
+-> Sie brauchen sich keine Sorgen um die Deinstallation zu machen, da der Mod nur Länder-, Provinz- und Globale Flaggen verwendet, die bei der Deinstallation keinen Schaden am Spielstand verursachen
+Sie können diese Mod bei jedem aktiven Spielstand hinzufügen und später wieder entfernen, falls gewünscht.
+
+[h2]KI[/h2]
+[b]Die KI wird diesen Mod oder seine Funktionen niemals verwenden![/b]
+Wenn ein Spiel mit geöffnetem Menü gespeichert wird, schließt die KI es ohne Änderungen.
+Wenn der KI durch Speichertricks ein Setup-Menü gegeben wird, wählt die KI „Normal“ für das Cheats-Menü und „Einzelspieler“ für das Mehrspieler Menü aus.
+
+
+[h1]Unterstützte Sprachen:[/h1]
+[list]
+    [*]English von [url=https://steamcommunity.com/id/mat1432/]mat1432[/url]
+    [*]Deutsch von [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
+[/list]

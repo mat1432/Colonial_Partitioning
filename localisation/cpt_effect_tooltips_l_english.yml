@@ -1,0 +1,33 @@
+﻿l_english:
+# tooltips
+ colony_p_ironman: "§RNot allowed on Ironman Saves OR when Cheats are Disabled!§!"
+
+# effect tooltips
+ cpt_start_tt: "Begin! This may cause severe lag.\n"
+ cpt_start_delayed_tt: "Another §YPlayer§! has used this within the last §Y30 Days§!!"
+
+ cpt_set_protection_tt: "They §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\n§YCan be revoked at any time.§!"
+ cpt_unset_protection_tt: "They §RLose§! §YProtected§! status!"
+ cpt_reset_protection_tt: "§RRemoves§! §YProtected§! status from ALL our §YColony Subjects§!!"
+ cpt_annex_colony_tt: "Follows the same logic as Colony Partitioning! The entire colony is annexed by us!\nWe will NOT inherit their Treasury, Armies, Leaders, or Fleets!"
+
+ colony_p_protect_players_x_tt: "All Colonies that were EVER a §YPlayer§! are currently Protected!\nNot to be confused with specific §YProtection§!!"
+ colony_p_protect_players_tt: "No Colonies that were EVER a §YPlayer§! are Protected!\nNot to be confused with specific §YProtection§!!"
+
+ cpt_core_1_tt: "Effects:\nAll Colonies will be affected.\n§YFull Cores§!, §!Territorial Cores§! & §YUncored Provinces§! will be replicated."
+ cpt_core_2_tt: "Effects:\nUncored Colonies will be skipped.\n§YFull Cores§! & §YTerritorial Cores§! will be replicated."
+ cpt_core_3_tt: "Effects:\nAll Colonies will be affected.\nWe §GGain§! §YFull Cores§! in every province ceded to us!"
+# for individual colony annexation
+ cpt_core_1_ne_tt: "Effects:\n§YFull Cores§!, §YTerritorial Cores§! & §YUncored Provinces§! will be replicated."
+ cpt_core_2_ne_tt: "Effects:\n§YFull Cores§! & §YTerritorial Cores§! will be replicated."
+ cpt_core_3_ne_tt: "Effects:\nWe §GGain§! §YFull Cores§! in every province ceded to us!"
+
+ cpt_protect_colony_tooltip: "§Y[cpt_set_protection_from.GetName]§! will §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
+
+# for undo partitioning
+ cpt_undo_partitioning_tt: "Finds all provinces in the world that was taken during partitioning, and gives them back.\nThis does NOT give them Cores or Claims, they are required to make new Cores if need be!\nProvinces CANNOT be stripped from Active Players!\nFollows the same logic as all Partitioning features.\nIf you Annex the Colony or it changes to a Formable: They will lose all lands recognised as taken!\n§OThis Will Cause SEVERE LAG!§!"
+
+ cpt_claims_1_tt: "\nPrevious Owner will §RLose§! All §YCores§!"
+ cpt_claims_2_tt: "\nPrevious Owner will §GGain§! §YClaims§!"
+ cpt_claims_3_tt: "\nPrevious Owner will §GKeep§! their §YCores§! (including §YTerritorial Cores§!)"
+ cpt_claims_player_tt: "\n§YPlayer Colonies§! will ALWAYS §GKeep§! §YCores§! & §GGain§! §YPermanent Claims§!"

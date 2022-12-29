@@ -1,0 +1,72 @@
+﻿l_german:
+
+##Übersetzt von Thylon##
+
+# events
+cpt_exit: "Schließen"
+cpt_back: "Zurück/Abbrechen"
+#    setup events
+cpt_98_title: "<CP> Kolonie Aufteilung - Einrichtung"
+cpt_98_desc: "Diese Mod erlaubt es jedem §YSpieler§! das System ernsthaft zu manipulieren oder in manchen Fällen sogar zu betrügen.\nWenn es sich um ein Multiplayer-Spiel handelt, sollten die Cheats deaktiviert werden.\n\nGrundsätzlich gilt: Wenn eine Kolonie annektiert wird, sollten Sie trotzdem volle Kerne erhalten oder die Entkernungszeit respektieren."
+cpt_98_nocheat: "§Y(Überschreibt)§! §ODeaktiviert§! §YCheats§!"
+cpt_98_normal: "§Y(Normal)§! §ODeaktiviert§! §YCheats§! in §YIronman-Spielständen§!"
+cpt_98_cheat: "§Y(Überschreibt)§! CHEATS! CHEATS! .. Hust .. Ich meine, ich teste nur..."
+cpt_99_title: "<CP> Kolonie Aufteilung - Ist dies ein Multiplayer Spiel?"
+cpt_99_desc: "Wenn dieser Spielstand für mehrere Personen bestimmt ist oder verwendet wird, dann geben Sie dies bitte an!\n\nWollen Sie grundsätzlich eine Spam-Verzögerung haben? (30 Tage globale Verzögerung)"
+cpt_99_sp: "Einzelspieler"
+cpt_99_mp: "Mehrspieler (Spam-Verzögerung)"
+
+#    main menu
+cpt_1_title: "<CP> Kolonie Aufteilung - Hauptmenü"
+cpt_1_desc: "Um auf §YSchutzmechanismen§! für bestimmte §YKolonien§! zuzugreifen, siehe die §YEinfluss§! Aktionen im §YDiplomatie-Bildschirm§!.\nNotiz für Mehrspieler: §YSpieler§! erhalten in der Regel den standardmäßigen §YSchutz§! und behalten IMMER §YKernprovinzen§!!\n\nAktuelle Kerneinstellung: [Root.GetColonyCoreSetting]\nSpielerschutz ist: [Root.GetColonyPlayerSetting]\nVorherige Besitzer: [Root.GetColonyClaimsSetting]"
+cpt_start: "Beginnen §O(Kann zu ernsthaftem Lag führen)§!"
+cpt_start_x: "Beginnen §O(Zurzeit nicht verfügbar)§!"
+cpt_open_settings: "§MMod Einstellungen öffnen§!"
+
+cpt_97_title: "Kolonie Aufteilung - Fehler"
+cpt_97_desc: "Es ist etwas passiert und Ihre Anfrage konnte nicht erfüllt werden!\nVersuchen Sie es später noch einmal!\n\nWahrscheinlich bekannte Ursachen (Wir wissen es vielleicht nicht!):[Root.GetColonyMP][Root.GetColonyMPDelay]"
+
+#    settings menu
+cpt_2_title: "Kolonie Aufteilung - Einstellungen"
+cpt_2_desc: "Einstellungensmenü\n\nAktuelle Kerneinstellung: [Root.GetColonyCoreSetting]\nSpielerschutz ist: [Root.GetColonyPlayerSetting]\nVorherige Besitzer: [Root.GetColonyClaimsSetting]"
+cpt_open_core_settings: "§MKerneinstellungen für die Übertragung öffnen§!"
+cpt_open_player_settings: "§MSpielerschutzeinstellungen öffnen§!"
+cpt_open_claims_settings: "§MEinstellungen für Ansprüche des Vorbesitzers öffnen§!"
+cpt_reset_protection: "§OALLE Kolonieschutzmaßnahmen zurücksetzen§!"
+
+#    core settings menu
+cpt_3_title: "Kolonie Aufteilung - Koloniekern-Einstellungen"
+cpt_3_desc: "Wie sollen §YKernprovinzen§! verarbeitet werden?\n\n Es gibt 3 Optionen:\n 1 = Es werden §YKernprovinzen§!, §YTerritoriale Kernprovinzen§! & §YNicht Kernprovinzen§! an uns übertragen.\n 2 = Wir überspringen §YNicht Kernprovinzen§! §M(Standard)§!\n Alle Kolonien mit fehlenden §YKernprovinzen§! werden übersprungen\n §YVolle Kernprovinzen§! & §YTerritoriale Kernprovinzen§! werden auf uns übertragen.\n 3 = Wir machen alles zu §YVollständige Kernprovinzen§! §M(Cheats)§!\n Wir §Gerhalten§! §YVollständige Kernprovinzen§! auf allen an uns abgetretenen Provinzen!\n\nAktuelle Kerneinstellung: [Root.GetColonyCoreSetting]"
+cpt_3_1: "Übertragt §YKernprovinzen§!"
+cpt_3_1_s: "Übertragt §YKernprovinzen§! §M(Ausgewählt)§!"
+cpt_3_2: "Überspringt §YNicht Kernprovinzen§!"
+cpt_3_2_s: "Überspringt §YNicht Kernprovinzen§! §M(Ausgewählt)§!"
+cpt_3_3: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! [Root.GetColonyNoCheat]"
+cpt_3_3_x: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! [Root.GetColonyNoCheat]"
+cpt_3_3_s: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! §M(Ausgewählt)§!"
+
+#    player protection settings menu
+cpt_4_title: "Kolonie Aufteilung - Spielerschutzeinstellungen"
+cpt_4_desc: "Alle Kolonien, die jemals von einem §YSpieler§! kontrolliert wurden, können §YSchutz§! von der Partitionierung erhalten. Standardmäßig ist der §YSchutz§! §Gaktiviert§!.\n\nSpielerschutz ist: [Root.GetColonyPlayerSetting]"
+cpt_4_x: "§O(DEAKTIVIEREN)§! §YSpieler§! Kolonien §Ynicht schützen§! §M(Ausgewählt)§!"
+cpt_4_e: "§G(AKTIVIEREN)§! §YSchützt§! §YSpieler§! Kolonien"
+
+#    previous owner claims settings menu
+cpt_5_title: "Kolonie Aufteilung - Einstellungen für Vorbesitzeransprüche"
+cpt_5_desc: "Sollte der Voreigentümer bei der Übertragung von §YKernprovinzen§! seine Ansprüche behalten?\n\nEs gibt 3 Möglichkeiten:\n 1 = Sie §Rverlieren§! alle §YKernprovinzen§!\n 2 = Sie §Gerhalten§! Ansprüche §M(Standard)§!\n 3 = Sie §Gerhalten§! alle §YKernprovinzen§! & §Gerhalten§! §YAnsprüche§!\n Hinweis: Sie werden alle §YTerritorialen Kernprovinzen§! §Gbehalten§!\n\nAnmerkung: Alle Kolonien, die jemals von einem Spieler kontrolliert wurden, werden alle §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!\n\nVorbesitzer werden: [Root.GetColonyClaimsSetting]"
+cpt_5_1: "§RVerliert§! alle §YKernprovinzen§!"
+cpt_5_1_s: "§RVerliert§! alle §YKernprovinzen§! §M(Ausgewählt)§!"
+cpt_5_2: "§GErhält§! §YAnsprüche§!"
+cpt_5_2_s: "§GErhält§! §YAnsprüche§! §M(Ausgewählt)§!"
+cpt_5_3: "§GBehält§! alle §YKernprovinzen§! & §Gehält§! §YAnsprüche§!"
+cpt_5_3_s: "§GBehält§! alle §YKernprovinzen§! & §Gerhält§! §YAnsprüche§! §M(Ausgewählt)§!"
+
+# protect colony event alternative
+ cpt_50_title: "Kolonieschutz Einstellen"
+ cpt_50_desc: "§Y[cpt_set_protection_from.GetName]§! wird §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+ cpt_50_protect: "Als Geschützt Festlegen"
+
+# Recursive Events. Always hidden
+ cpt_r_t: "Recursive Event"
+ cpt_r_d: ""
+ cpt_r_a: ""
