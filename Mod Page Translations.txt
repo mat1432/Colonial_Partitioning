@@ -59,6 +59,8 @@ If a setup menu is given to the AI through save trickery, the AI will pick 'Norm
     [*]German by [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
 [/list]
 
+[h3][url=https://github.com/mat1432/Colonial_Partitioning]Github[/url][/h3]
+
 The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
@@ -151,3 +153,5 @@ Wenn der KI durch Speichertricks ein Setup-Menü gegeben wird, wählt die KI „
     [*]English von [url=https://steamcommunity.com/id/mat1432/]mat1432[/url]
     [*]Deutsch von [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
 [/list]
+
+[h3][url=https://github.com/mat1432/Colonial_Partitioning]Github[/url][/h3]
