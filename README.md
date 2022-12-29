@@ -1,6 +1,8 @@
 # Colonial_Partitioning
-Made by mat1432 (Steam)
-https://steamcommunity.com/id/mat1432/
+### Made by mat1432 (Steam) https://steamcommunity.com/id/mat1432/
+### https://github.com/mat1432/Colonial_Partitioning
+
+# Though the project title is 'Colonial_Partitioning' the Steam download has the mod name 'colonial_fixes' as a relic from this mod's early development!
 
 [b]1.34.5 ; This Mod Does Not Need to be Updated![/b]
 
