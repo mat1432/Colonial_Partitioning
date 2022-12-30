@@ -59,7 +59,8 @@ If a setup menu is given to the AI through save trickery, the AI will pick 'Norm
     [*]German by [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
 [/list]
 
-[h3][url=https://github.com/mat1432/colonial_fixes/]GitHub[/url][/h3]
+[url=https://github.com/mat1432/colonial_fixes/]GitHub[/url]
+Licensed under the [url=https://github.com/mat1432/colonial_fixes/blob/main/LICENSE]GNU General Public License v3.0[/url]
 
 The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
@@ -154,4 +155,5 @@ Wenn der KI durch Speichertricks ein Setup-Menü gegeben wird, wählt die KI „
     [*]Deutsch von [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
 [/list]
 
-[h3][url=https://github.com/mat1432/colonial_fixes/]GitHub[/url][/h3]
+[url=https://github.com/mat1432/colonial_fixes/]GitHub[/url]
+Lizenziert unter der [url=https://github.com/mat1432/colonial_fixes/blob/main/LICENSE]GNU General Public License v3.0[/url]
