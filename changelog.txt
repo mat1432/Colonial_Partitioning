@@ -6,12 +6,13 @@
 -> Fix Console flags editing mistakes regarding this mod's cheats
 -> Fixed descriptive tooltip for setting a colony as protected
 -> 'Reset ALL Colony Protections' now describes every colony which will lose protected status
+-> Addded Event pictures, will only show if you have DLC [url=https://store.steampowered.com/app/625171/Europa_Universalis_IV_Digital_Extreme_Edition_Upgrade_Pack/]Star and Crescent[/url] (Completely Optional)
 
 1.0.5d
 -> Undo Partitioning Diplomatic Action now fires a choice event where you can chose to set that colony as Protected.
 
 1.0.5c
--> Minor Fixes to German Translation (Credit to Thylon https://steamcommunity.com/id/thylon125/)
+-> Minor Fixes to German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
 
 1.0.5b
 -> Fixed Protection & Player Protection mechanics for 'Undo Partitioning' Diplomatic Action
@@ -22,7 +23,7 @@
 - Note: Uses the Tag of the colony in province flags, if you annex the colony or it changes to a formable: They will lose all recognition of partitioned lands
 -> Added Recursive Menus
 -> Improvements to localisation
-- Added German Translation (Credit to Thylon https://steamcommunity.com/id/thylon125/)
+- Added German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
 - Fixed Player Protection settings tooltip
 - Fixed Typo
 -> Fixed ability to change startup settings through console commands:
