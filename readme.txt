@@ -2,7 +2,7 @@
 #### https://github.com/mat1432/Colonial_Partitioning
 ### Though the project title is 'Colonial_Partitioning' the Steam download has the mod name 'colonial_fixes' as a relic from this mod's early development!
 
-[b]1.34.5 ; This Mod Does Not Need to be Updated![/b]
+[b]1.34.* ; This Mod Does Not Need to be Updated![/b]
 
 This mod allows you to strip away all provinces any of your colonies has, that is in a colony charter outside their capital charter!
 No more Brazil and Colombia completely colonizing Peru on an ironman save, you can just strip the lands to your possession and then unpause to create Colonial Peru!
