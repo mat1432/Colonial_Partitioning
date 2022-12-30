@@ -1,5 +1,5 @@
 ### English
-[b]1.34.5 ; This Mod Does Not Need to be Updated![/b]
+[b]1.34.* ; This Mod Does Not Need to be Updated![/b]
 
 This mod allows you to strip away all provinces any of your colonies has, that is in a colony charter outside their capital charter!
 No more Brazil and Colombia completely colonizing Peru on an ironman save, you can just strip the lands to your possession and then unpause to create Colonial Peru!
@@ -95,7 +95,7 @@ At its core the code to partition colonies is like this:
 
 ### German
 ##Übersetzt von Thylon##
-[b]1.34.5 ; Dieser Mod muss nicht aktualisiert werden![/b]
+[b]1.34.* ; Dieser Mod muss nicht aktualisiert werden![/b]
 
 Diese Mod erlaubt es, alle Provinzen einer Kolonie zu entfernen, die sich in einer Kolonialregion außerhalb ihrer Hauptkolonialregion befinden!
 Nie wieder werden Brasilien und Kolumbien Peru komplett kolonisieren, wenn du einen Spielstand hast. Du kannst das Land einfach in deinen Besitz bringen und dann die Pause des Spiels aufheben, um das Koloniale Peru zu erschaffen!
