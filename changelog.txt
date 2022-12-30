@@ -2,6 +2,8 @@
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
 1.1.0
+-> Added [url=https://github.com/mat1432/colonial_fixes/]GitHub[/url] Repository
+-> Now licensed under the [url=https://github.com/mat1432/colonial_fixes/blob/main/LICENSE]GNU General Public License v3.0[/url]
 -> Refactored Code with callable scripts and triggers for common cases to improve tooltips
 -> Fix Console flags editing mistakes regarding this mod's cheats
 -> Fixed descriptive tooltip for setting a colony as protected
