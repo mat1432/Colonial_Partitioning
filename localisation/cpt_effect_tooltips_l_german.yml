@@ -25,7 +25,8 @@ cpt_core_1_ne_tt: "Auswirkungen:\n§YVollständige Kernprovinzen§!, §YTerritor
 cpt_core_2_ne_tt: "Auswirkungen: §YVollständige Kernprovinzen§! und §YTerritoriale Kernprovinzen§! werden repliziert."
 cpt_core_3_ne_tt: "Auswirkungen:\nWir §Gerhalten§! §YVollständige Kernprovinzen§! in jeder an uns abgetretenen Provinz!"
 
-cpt_protect_colony_tooltip: "§Y[cpt_set_protection_from.GetName]§! wird §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+cpt_set_protection_this_tt: "§Y[This.GetName]§! wird §Gerhalten§! §YGeschützter§! Status, Kolonieabtrennungen werden ihnen niemals ihr Land entziehen!\nSie können jederzeit widerrufen werden."
+cpt_unset_protection_this_tt: "§Y[This.GetName]§! wird den §Ygeschützten§! Status §Rverlieren§!!"
 
 # for undo partitioning
 cpt_undo_partitioning_tt: "Findet alle Provinzen in der Welt, die während der Aufteilung eingenommen wurden, und gibt sie zurück.\nDies gibt ihnen KEINE Kernprovinzen oder Ansprüche, sie müssen bei Bedarf neue Kernprovinzen erstellen!\nProvinzen können aktiven Spielern NICHT weggenommen werden!\nFolgt der gleichen Logik wie alle Aufteilungsfunktionen.\nWenn die Kolonie annektiert wird oder sich in einen formbare Nation ändert: Wir verlieren alle Ländereien, die als eingenommen anerkannt werden.\n§ODies führt zu einem SCHWEREN Lag!§!"

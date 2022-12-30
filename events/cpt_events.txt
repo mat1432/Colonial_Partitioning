@@ -73,13 +73,12 @@ country_event = {
 		name = "cpt_reset_protection"
 		ai_chance = { factor = 0 }
 		custom_tooltip = cpt_reset_protection_tt
-		hidden_effect = {
-			every_subject_country = {
-				limit = {
-					is_colonial_nation = yes
-				}
-				clr_country_flag = colony_p_protected
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = yes
+				cpt_is_protected = yes
 			}
+			cpt_clr_protected = yes
 		}
 		hidden_effect = { country_event = { id = cpt.1001 } }
 	}
@@ -141,13 +140,12 @@ country_event = {
 		name = "cpt_reset_protection"
 		ai_chance = { factor = 0 }
 		custom_tooltip = cpt_reset_protection_tt
-		hidden_effect = {
-			every_subject_country = {
-				limit = {
-					is_colonial_nation = yes
-				}
-				clr_country_flag = colony_p_protected
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = yes
+				cpt_is_protected = yes
 			}
+			cpt_clr_protected = yes
 		}
 		hidden_effect = { country_event = { id = cpt.1002 } }
 	}
@@ -407,12 +405,7 @@ country_event = {
 		trigger = { cpt_player_protection_enabled = yes }
 		ai_chance = { factor = 100 }
 		highlight = yes
-		custom_tooltip = cpt_protect_colony_tooltip
-		hidden_effect = {
-			event_target:cpt_set_protection_from = {
-				set_country_flag = colony_p_protected
-			}
-		}
+		event_target:cpt_set_protection_from = { cpt_set_protected = yes }
 	}
 
 	option = {

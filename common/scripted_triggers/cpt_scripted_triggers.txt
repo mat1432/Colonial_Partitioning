@@ -79,6 +79,20 @@ cpt_claims_3 = {
 	}
 }
 
+# callable tooltips for protection triggers
+cpt_is_protected = {
+	custom_trigger_tooltip = {
+		tooltip = cpt_is_protected_tt
+		has_country_flag = colony_p_protected
+	}
+}
+cpt_not_protected = {
+	custom_trigger_tooltip = {
+		tooltip = cpt_is_not_protected_tt
+		NOT = { has_country_flag = colony_p_protected }
+	}
+}
+
 # returns:
 # yes if enabled (if NOT has flag colony_p_players_x)
 # no if disabled (if has flag colony_p_players_x)

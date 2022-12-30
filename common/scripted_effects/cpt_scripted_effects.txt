@@ -28,6 +28,14 @@ cpt_validate = {
 			}
 			set_country_flag = colony_p_setup
 		}
+		if = { # to fix console flag editing mistakes
+			limit = {
+				has_global_flag = colony_p_nocheat
+				has_global_flag = colony_p_cheats
+			}
+			set_global_flag = colony_p_nocheat
+			clr_global_flag = colony_p_cheats
+		}
 	}
 }
 
@@ -53,7 +61,18 @@ cpt_claims_set = {
 	}
 }
 
+# callable tooltips for protection triggers
+cpt_set_protected = {
+	custom_tooltip = cpt_set_protection_this_tt
+	hidden_effect = { set_country_flag = colony_p_protected }
+}
+cpt_clr_protected = {
+	custom_tooltip = cpt_unset_protection_this_tt
+	hidden_effect = { clr_country_flag = colony_p_protected }
+}
 
+# Partitioning Code
+# Do not edit unless you understand its components. See readme, it has a simplified code structure example
 cpt_start = {
 	hidden_effect = {
 		set_global_flag = colony_p_ongoing
@@ -94,7 +113,7 @@ cpt_start = {
 				ai = yes
 				is_colonial_nation = yes
 				cpt_not_player_protected = { nation = this }
-				NOT = { has_country_flag = colony_p_protected }
+				cpt_not_protected = yes
 
 				if = { # skip uncored colonies
 					limit = { cpt_core_2 = yes }
@@ -199,6 +218,7 @@ cpt_start = {
 		}
 	}
 
+	# mark as done
 	hidden_effect = {
 		clr_global_flag = colony_p_ongoing
 		set_global_flag = colony_p_delay

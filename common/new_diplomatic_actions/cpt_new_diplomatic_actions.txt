@@ -11,28 +11,21 @@ cpt_protect_colony = {
         FROM = {
 			is_subject_of = root
 			is_colonial_nation = yes
-			NOT = { has_country_flag = colony_p_protected }
+			cpt_not_protected = yes
 		}
     }
 
     # Determines when the action can be taken
     is_allowed = {
-		FROM = {
-			custom_trigger_tooltip = {
-				tooltip = cpt_is_not_protected_tt
-				NOT = { has_country_flag = colony_p_protected }
-			}
-		}
+		FROM = { cpt_not_protected = yes }
         # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
     }
 
     # Which effects to execute on acceptance
     on_accept = {
 		custom_tooltip = cpt_set_protection_tt
-		hidden_effect = {
-			FROM = {
-				set_country_flag = colony_p_protected
-			}
+		FROM = {
+			cpt_set_protected = yes
 		}
     }
 }
@@ -48,27 +41,17 @@ cpt_unprotect_colony = {
         FROM = {
 			is_subject_of = root
 			is_colonial_nation = yes
-			has_country_flag = colony_p_protected
+			cpt_is_protected = yes
 		}
     }
 
     is_allowed = {
-		FROM = {
-			custom_trigger_tooltip = {
-				tooltip = cpt_is_protected_tt
-				has_country_flag = colony_p_protected
-			}
-		}
+		FROM = { cpt_is_protected = yes }
     }
     
     # Which effects to execute on acceptance
     on_accept = {
-		custom_tooltip = cpt_unset_protection_tt
-		hidden_effect = {
-			FROM = {
-				clr_country_flag = colony_p_protected
-			}
-		}
+		FROM = { cpt_clr_protected = yes }
     }
 }
 
@@ -94,12 +77,7 @@ cpt_annex_colony = {
 			ai = yes
 			cpt_not_player_protected = { nation = this }
 		}
-		FROM = {
-			custom_trigger_tooltip = {
-				tooltip = cpt_is_not_protected_tt
-				NOT = { has_country_flag = colony_p_protected }
-			}
-		}
+		FROM = { cpt_not_protected = yes }
     }
 
     on_accept = {
@@ -137,7 +115,7 @@ cpt_annex_colony = {
 			set_global_flag = colony_p_ongoing
 			FROM = {
 				clr_country_flag = cpt_prev_partitioned
-				clr_country_flag = colony_p_protected
+				cpt_clr_protected = yes
 				every_owned_province = {
 					# remember core status
 					if = {
@@ -248,12 +226,7 @@ cpt_undo_partition = {
 			# ai = yes # should player colonies be messed with so easily?
 			cpt_not_player_protected = { nation = this }
 		}
-		FROM = {
-			custom_trigger_tooltip = {
-				tooltip = cpt_is_not_protected_tt
-				NOT = { has_country_flag = colony_p_protected }
-			}
-		}
+		FROM = { cpt_not_protected = yes }
 		FROM = {
 			custom_trigger_tooltip = {
 				tooltip = cpt_already_partitioned_tt
@@ -280,7 +253,7 @@ cpt_undo_partition = {
 						is_colonial_nation = yes
 
 						cpt_not_player_protected = { nation = this }
-						NOT = { has_country_flag = colony_p_protected }
+						cpt_not_protected = yes
 					}
 				}
 				# for any active save games using older mod version. prevent glitches

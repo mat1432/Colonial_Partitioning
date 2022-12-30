@@ -22,7 +22,8 @@
  cpt_core_2_ne_tt: "Effects:\n§YFull Cores§! & §YTerritorial Cores§! will be replicated."
  cpt_core_3_ne_tt: "Effects:\nWe §GGain§! §YFull Cores§! in every province ceded to us!"
 
- cpt_protect_colony_tooltip: "§Y[cpt_set_protection_from.GetName]§! will §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
+ cpt_set_protection_this_tt: "§Y[This.GetName]§! will §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
+ cpt_unset_protection_this_tt: "§Y[This.GetName]§! will §RLose§! §YProtected§! status!"
 
 # for undo partitioning
  cpt_undo_partitioning_tt: "Finds all provinces in the world that was taken during partitioning, and gives them back.\nThis does NOT give them Cores or Claims, they are required to make new Cores if need be!\nProvinces CANNOT be stripped from Active Players!\nFollows the same logic as all Partitioning features.\nIf you Annex the Colony or it changes to a Formable: They will lose all lands recognised as taken!\n§OThis Will Cause SEVERE LAG!§!"
