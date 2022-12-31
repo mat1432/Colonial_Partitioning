@@ -2,68 +2,92 @@
 ### The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
-1.1.1
-
+1.1.0b
+[list]
+    [*]Minor Refactoring of code
+    [*]Improved Documentation
+    [*]Credited myself for my code
+[/list]
 
 1.1.0
--> Added [url=https://github.com/mat1432/colonial_fixes/]GitHub Repository[/url]
--> Now licensed under the [url=https://github.com/mat1432/colonial_fixes/blob/main/LICENSE]GNU General Public License v3.0[/url]
--> Refactored Code with callable scripts and triggers for common cases to improve tooltips
--> Fix Console flags editing mistakes regarding this mod's cheats
--> Fixed descriptive tooltip for setting a colony as protected
--> 'Reset ALL Colony Protections' now describes every colony which will lose protected status
--> Addded Event pictures, will only show if you have DLC [url=https://store.steampowered.com/app/625171/Europa_Universalis_IV_Digital_Extreme_Edition_Upgrade_Pack/]Star and Crescent[/url] (Completely Optional)
+[list]
+    [*]Added [url=https://github.com/mat1432/colonial_fixes/]GitHub Repository[/url]
+    [*]Now licensed under the [url=https://github.com/mat1432/colonial_fixes/blob/main/LICENSE]GNU General Public License v3.0[/url]
+    [*]Refactored Code with callable scripts and triggers for common cases to improve tooltips
+    [*]Fix Console flags editing mistakes regarding this mod's cheats
+    [*]Fixed descriptive tooltip for setting a colony as protected
+    [*]'Reset ALL Colony Protections' now describes every colony which will lose protected status
+    [*]Addded Event pictures, will only show if you have DLC [url=https://store.steampowered.com/app/625171/Europa_Universalis_IV_Digital_Extreme_Edition_Upgrade_Pack/]Star and Crescent[/url] (Completely Optional)
+[/list]
 
 1.0.5d
--> Undo Partitioning Diplomatic Action now fires a choice event where you can chose to set that colony as Protected.
+[list]
+    [*]Undo Partitioning Diplomatic Action now fires a choice event where you can chose to set that colony as Protected.
+[/list]
 
 1.0.5c
--> Minor Fixes to German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
+[list]
+    [*]Minor Fixes to German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
+[/list]
 
 1.0.5b
--> Fixed Protection & Player Protection mechanics for 'Undo Partitioning' Diplomatic Action
+[list]
+    [*]Fixed Protection & Player Protection mechanics for 'Undo Partitioning' Diplomatic Action
+[/list]
 
 1.0.5
--> Added 'Undo Partitioning' Diplomatic Action.
-- Note: Only works on colonies partitioned after this update!!!
-- Note: Uses the Tag of the colony in province flags, if you annex the colony or it changes to a formable: They will lose all recognition of partitioned lands
--> Added Recursive Menus
--> Improvements to localisation
-- Added German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
-- Fixed Player Protection settings tooltip
-- Fixed Typo
--> Fixed ability to change startup settings through console commands:
----- Cheats: 'event cpt.98'
----- Multiplayer: 'event cpt.99'
----- NOTE: If specifying a County Tag: that country cannot be AI or the event will not fire.
+[list]
+    [*]Added 'Undo Partitioning' Diplomatic Action.
+    [**]Note: Only works on colonies partitioned after this update!!!
+    [**]Note: Uses the Tag of the colony in province flags, if you annex the colony or it changes to a formable: They will lose all recognition of partitioned lands
+    [*]Added Recursive Menus
+    [*]Improvements to localisation
+    [**]Added German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
+    [**]Fixed Player Protection settings tooltip
+    [**]Fixed Typo
+    [*]Fixed ability to change startup settings through console commands:
+    [**]Cheats: 'event cpt.98'
+    [**]Multiplayer: 'event cpt.99'
+    [**]NOTE: If specifying a County Tag: that country cannot be AI or the event will not fire.
+[/list]
 
 1.0.4 (4 Updates)
--> Fixed Ongoing Partitioning Warning
--> Fixed Multiplayer Delay
--> Fixed Multiplayer Protection
--> Fixed bug where the mod thinks someone is partitioning but is in fact not
--> Fixed bug Where provinces from previous partitions would sometimes be assigned to the core layout of the previous partitioning, not the current layout
+[list]
+    [*]Fixed Ongoing Partitioning Warning
+    [*]Fixed Multiplayer Delay
+    [*]Fixed Multiplayer Protection
+    [*]Fixed bug where the mod thinks someone is partitioning but is in fact not
+    [*]Fixed bug Where provinces from previous partitions would sometimes be assigned to the core layout of the previous partitioning, not the current layout
+[/list]
 
 1.0.3 (2 Updates)
--> Improvements to localisation
-- Cleaned up Menus with walls of text
-- Corrected Typos
-- Fixed Missing Tooltips (Split Tooltips file into 3)
-- Adjusted wording on Tooltips, Options, & Descriptions
-- Improved my use of Colours to signify & identify Objects of Interest
--> Cleaned Code
-- Trimmed all unique identifiers (Won't improve performance, but will make the code easier to read!!!)
-- Adjusted Logic to improve Readability (And Performance, but not by much)
+[list]
+    [*]Improvements to localisation
+    [**]Cleaned up Menus with walls of text
+    [**]Corrected Typos
+    [**]Fixed Missing Tooltips (Split Tooltips file into 3)
+    [**]Adjusted wording on Tooltips, Options, & Descriptions
+    [**]Improved my use of Colours to signify & identify Objects of Interest
+    [*]Cleaned Code
+    [**]Trimmed all unique identifiers (Won't improve performance, but will make the code easier to read!!!)
+    [**]Adjusted Logic to improve Readability (And Performance, but not by much)
+[/list]
 
 1.0.2
--> Trimmed some unnecessary code and comments
--> Minor adjustments to localisation
--> Fixed and re-added Multiplayer delay option (Also included hidden auto checks to ensure compatibility with any active save games)
--> Fixed instant annex diplomatic action
+[list]
+    [*]Trimmed some unnecessary code and comments
+    [*]Minor adjustments to localisation
+    [*]Fixed and re-added Multiplayer delay option (Also included hidden auto checks to ensure compatibility with any active save games)
+    [*]Fixed instant annex diplomatic action
+[/list]
 
 1.0.1
--> Added Thumbnail
--> Removed Multiplayer optional delay; I did not understand had_global_flag triggers, I might re-add later if I fix it.
+[list]
+    [*]Added Thumbnail
+    [*]Removed Multiplayer optional delay; I did not understand had_global_flag triggers, I might re-add later if I fix it.
+[/list]
 
 1.0.0
--> Foundation of the mod
+[list]
+    [*]Foundation of the mod
+[/list]
