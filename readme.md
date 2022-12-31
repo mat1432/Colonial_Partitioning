@@ -61,8 +61,7 @@ An event will pop at game start to specify if you want to enable cheaty options 
 [GitHub Repository](/../../)
 Licensed under the [GNU General Public License v3.0](/LICENSE)
 
-The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
--> NONE of the Translators who Volunteered their time are at fault for any imperfections!
+The change logs are in English, so far any and all translations of the Change Logs were done via online websites. NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
 Most of the code is for compatibility, fine-tuning, and ease of use.
 At its core the code to partition colonies is like this:
