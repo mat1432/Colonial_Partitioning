@@ -1,5 +1,5 @@
 # Colonial Partitioning
-*Made by mat1432 [Steam](https://steamcommunity.com/id/mat1432/) [GitHub](/../../../)*
+*Made by mat1432 [Steam](https://steamcommunity.com/id/mat1432/) [GitHub](https://github.com/mat1432/)*
 
 **1.34.* ; This Mod Does Not Need to be Updated!**
 
@@ -58,7 +58,7 @@ An event will pop at game start to specify if you want to enable cheaty options 
 - English by [mat1432](https://steamcommunity.com/id/mat1432/)
 - German by [Thylon](https://steamcommunity.com/id/thylon125/)
 
-[GitHub Repository](/../../)
+[GitHub Repository](https://github.com/mat1432/colonial_fixes/)
 Licensed under the [GNU General Public License v3.0](/LICENSE)
 
 The change logs are in English, so far any and all translations of the Change Logs were done via online websites. NONE of the Translators who Volunteered their time are at fault for any imperfections!
