@@ -54,7 +54,8 @@ An event will fire at the start of the game to specify if you want to enable che
 [/list]
 [h3]Backwards Compatibility:[/h3]
 [list]
-    [*]Same as above... The mod is compatible with prior versions, though don't go too far back because I'm not sure how far it is compatible with.
+    [*]Mostly works past [url=https://eu4.paradoxwikis.com/Patch_1.32]Patch 1.32[/url] (11 Nov 2021)
+    [*]Hard Limit is [url=https://eu4.paradoxwikis.com/Patch_1.23]Patch 1.23[/url] (16 Nov 2017)
 [/list]
 [h3]Save Compatibility:[/h3]
 [list]
