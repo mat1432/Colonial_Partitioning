@@ -38,17 +38,23 @@
 1.0.5
 [list]
     [*]Added 'Undo Partitioning' Diplomatic Action.
-    [**]Note: Only works on colonies partitioned after this update!!!
-    [**]Note: Uses the Tag of the colony in province flags, if you annex the colony or it changes to a formable: They will lose all recognition of partitioned lands
+    [list]
+        [*]Note: Only works on colonies partitioned after this update!!!
+        [*]Note: Uses the Tag of the colony in province flags, if you annex the colony or it changes to a formable: They will lose all recognition of partitioned lands
+    [/list]
     [*]Added Recursive Menus
     [*]Improvements to localisation
-    [**]Added German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
-    [**]Fixed Player Protection settings tooltip
-    [**]Fixed Typo
+    [list]
+        [*]Added German Translation (Credit to [url=https://steamcommunity.com/id/thylon125/]Thylon[/url])
+        [*]Fixed Player Protection settings tooltip
+        [*]Fixed Typo
+    [/list]
     [*]Fixed ability to change startup settings through console commands:
-    [**]Cheats: 'event cpt.98'
-    [**]Multiplayer: 'event cpt.99'
-    [**]NOTE: If specifying a County Tag: that country cannot be AI or the event will not fire.
+    [list]
+        [*]Cheats: 'event cpt.98'
+        [*]Multiplayer: 'event cpt.99'
+        [*]NOTE: If specifying a County Tag: that country cannot be AI or the event will not fire.
+    [/list]
 [/list]
 
 1.0.4 (4 Updates)
@@ -63,14 +69,18 @@
 1.0.3 (2 Updates)
 [list]
     [*]Improvements to localisation
-    [**]Cleaned up Menus with walls of text
-    [**]Corrected Typos
-    [**]Fixed Missing Tooltips (Split Tooltips file into 3)
-    [**]Adjusted wording on Tooltips, Options, & Descriptions
-    [**]Improved my use of Colours to signify & identify Objects of Interest
+    [list]
+        [*]Cleaned up Menus with walls of text
+        [*]Corrected Typos
+        [*]Fixed Missing Tooltips (Split Tooltips file into 3)
+        [*]Adjusted wording on Tooltips, Options, & Descriptions
+        [*]Improved my use of Colours to signify & identify Objects of Interest
+    [/list]
     [*]Cleaned Code
-    [**]Trimmed all unique identifiers (Won't improve performance, but will make the code easier to read!!!)
-    [**]Adjusted Logic to improve Readability (And Performance, but not by much)
+    [list]
+        [*]Trimmed all unique identifiers (Won't improve performance, but will make the code easier to read!!!)
+        [*]Adjusted Logic to improve Readability (And Performance, but not by much)
+    [/list]
 [/list]
 
 1.0.2

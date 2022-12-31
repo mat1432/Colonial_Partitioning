@@ -71,8 +71,8 @@ An event will fire at the start of the game to specify if you want to enable che
 
 [h1]Supported Languages:[/h1]
 [list]
-    [*]English by [url=https://steamcommunity.com/id/mat1432/]mat1432[/url]
-    [*]German by [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
+    [*]English by [user=mat1432]mat1432[/user]
+    [*]German by [user=thylon125]Thylon[/user]
 [/list]
 
 [url=https://github.com/mat1432/colonial_fixes/]GitHub Repository[/url]
@@ -149,8 +149,8 @@ Beim Spielstart wird ein Ereignis angezeigt, in dem eingestellt werden kann, ob 
 
 [h1]Unterstützte Sprachen:[/h1]
 [list]
-    [*]English von [url=https://steamcommunity.com/id/mat1432/]mat1432[/url]
-    [*]Deutsch von [url=https://steamcommunity.com/id/thylon125/]Thylon[/url]
+    [*]English von [user=mat1432]mat1432[/user]
+    [*]Deutsch von [user=thylon125]Thylon[/user]
 [/list]
 
 [url=https://github.com/mat1432/colonial_fixes/]GitHub-Repository[/url]
