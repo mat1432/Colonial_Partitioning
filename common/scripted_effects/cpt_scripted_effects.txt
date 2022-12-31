@@ -1,3 +1,4 @@
+# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
 cpt_validate = {
 	hidden_effect = {
 		if = { # for users who have an active game, this will fix them not having the flag

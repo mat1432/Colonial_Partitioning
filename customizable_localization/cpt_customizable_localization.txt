@@ -1,8 +1,9 @@
+# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
+
 #AVIALABLE CUSTOM LOCALISATION KEYS
 #When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
 # To not display anything, you can use 'localisation_key = ""'
 # Please add one example sentence for each key.
-
 
 ### Colony Core Setting
 #Ex: "Colony Core Setting - [Skip Uncored Colonies]"

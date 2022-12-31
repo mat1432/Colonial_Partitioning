@@ -1,4 +1,5 @@
-﻿l_english:
+﻿# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
+l_english:
 # setup events
  cpt_98_nocheat_tt: "Normally Ironman saves have some options disabled, this disables them completely."
  cpt_98_normal_tt: "Cheaty options are allowed on normal saves, Irnman saves still have cheats disabled."

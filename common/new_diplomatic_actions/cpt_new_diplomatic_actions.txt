@@ -1,4 +1,4 @@
-
+# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
 cpt_protect_colony = {
     category = influence           # Which diplomatic action list the action will appear in.
     # alert_index = <int>             # The alert to use for the action. Refer to static_actions for the indexes. Optional.

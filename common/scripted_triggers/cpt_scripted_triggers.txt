@@ -1,4 +1,4 @@
-
+# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
 # checks for core translation setting
 cpt_core_1 = {
 	hidden_trigger = {

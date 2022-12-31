@@ -1,4 +1,5 @@
-﻿l_english:
+﻿# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
+l_english:
 # decisions
  colonial_partition_title: "<CP> Colony Partition"
  colonial_partition_desc: "Opens the Colony Partition menu, will fix any colonies expanding into another colonies' charter.\nCan also be used to conquer the new world and have your other colonies core it for you!"
