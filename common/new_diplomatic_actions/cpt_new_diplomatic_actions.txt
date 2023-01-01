@@ -239,9 +239,10 @@ cpt_undo_partition = {
 
     on_accept = {
 		custom_tooltip = cpt_undo_partitioning_tt
-
 		hidden_effect = {
 			set_global_flag = colony_p_ongoing
+			clr_global_flag = colony_p_delay
+
 			# this will be the cause of a LOT of lag!
 			every_province = {
 				limit = {
@@ -329,10 +330,10 @@ cpt_undo_partition = {
 				clr_province_flag = territory_core
 				clr_province_flag = full_core
 			}
+			# mark as done
 			clr_global_flag = colony_p_ongoing
-		}
-		
-		hidden_effect = {
+			set_global_flag = colony_p_delay
+
 			FROM = { save_global_event_target_as = cpt_set_protection_from }
 		}
 		country_event = { id = cpt.50 }
