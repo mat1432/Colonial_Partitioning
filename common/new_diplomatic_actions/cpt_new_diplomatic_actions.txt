@@ -222,10 +222,10 @@ cpt_undo_partition = {
 
     is_allowed = {
 		cpt_cheats_allowed = yes
-		FROM = {
-			# ai = yes # should player colonies be messed with so easily?
-			cpt_not_player_protected = { nation = this }
-		}
+		# FROM = {
+		# 	# ai = yes # should player colonies be messed with so easily?
+		# 	cpt_not_player_protected = { nation = this }
+		# }
 		FROM = { cpt_not_protected = yes }
 		FROM = {
 			custom_trigger_tooltip = {
