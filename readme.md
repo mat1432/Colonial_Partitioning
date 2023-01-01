@@ -1,6 +1,7 @@
 # Colonial Partitioning
 *Made by mat1432 [Steam](https://steamcommunity.com/id/mat1432/) [GitHub](https://github.com/mat1432/)*
-![Thumbnail](https://github.com/mat1432/colonial_fixes/edit/main/thumbnail.png | width=250 | height=250)
+
+<img src="/thumbnail.png" style="float:right;width:200px;height:200px;" />
 
 **1.34.X ; This Mod Does Not Need to be Updated!**
 
