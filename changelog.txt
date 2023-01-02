@@ -2,6 +2,11 @@
 ### The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
+1.1.1b
+[list]
+    [*]Bug Fix: Prevents 'Undo Partitioning' from processing provinces already owned by the recipient!
+[/list]
+
 1.1.1
 [list]
     [*]Allow 'Undo Partitioning' Diplo Action on active players.
