@@ -14,51 +14,52 @@ This is a cheat mod, but I've included some settings so that it's less cheaty an
 
 
 ## This Mod is:
-- NOT Achievement Compatible! (Modifies the checksum)
-- But will work on an Ironman save.
+* NOT Achievement Compatible! (Modifies the checksum)
+* But will work on an Ironman save.
 
 
 An event will pop at game start to specify if you want to enable cheaty options or not.
 
 ## Diplomatic Actions:
-- Can Instant Annex any of your colonies (requires enabling cheats at game start, or 'normal' on non-Ironman saves)
-- You can specifically set colonies to be protected from partitioning / instant annex
-- You can undo the partitioning of a colony (Only works on or after update 1.0.5)
-- Will only undo lands that are your sovering provinces (Will NOT transfer lands owned by tributaries)
+* Can Instant Annex any of your colonies (requires enabling cheats at game start, or 'normal' on non-Ironman saves)
+* You can specifically set colonies to be protected from partitioning / instant annex
+* You can undo the partitioning of a colony (Only works on or after update 1.0.5)
+* Will only undo lands that are your sovering provinces (Will NOT transfer lands owned by tributaries)
 
 ## Partitioning:
-- You can specify to skip any colonies that have not yet cored all provinces to at least a territory, (Uncored land does not form colonies)
-- You can specify to ignore the colony coring progress and just full core everything (not allowed on Ironman saves, and disabled by 'No Cheats' option at game start)
+* You can specify to skip any colonies that have not yet cored all provinces to at least a territory, (Uncored land does not form colonies)
+* You can specify to ignore the colony coring progress and just full core everything (not allowed on Ironman saves, and disabled by 'No Cheats' option at game start)
+* **Provinces cannot be taken away from Active Players!**
 
 ### Undo Partitioning:
-- Accessed by 'Undo Partitioning' Diplomatic Action under Influence Category
-- Will only transfer your soverign or colonial lands that were taken in a previous partitioning to the current colony.
-- Follows the same logic as regular partitioning, and all nations whose lands are taken from during this process will be flagged as partitioned.
-- Will only work on colonies partitioned after Update 1.0.5.
-- **The Undo process cannot affect active Players!**
+* Accessed by 'Undo Partitioning' Diplomatic Action under Influence Category
+* Will only transfer your soverign or colonial lands that were taken in a previous partitioning to the current colony.
+* Follows the same logic as regular partitioning, and all nations whose lands are taken from during this process will be flagged as partitioned.
+* Will only work on colonies partitioned after Update 1.0.5.
+* **Provinces cannot be taken away from Active Players!**
 
 ## Multiplayer Safety:
-- By default, any colonies that were ever a player will be protected (Can be disabled)
-- Any colonies that were ever a player, if partitioned, will Always keep their cores (Including Territorial Cores) & gain Permanent claims on all lost land.
+* By default, any colonies that were ever a player will be protected (Can be disabled)
+* Any colonies that were ever a player, if partitioned, will Always keep their cores (Including Territorial Cores) & gain Permanent claims on all lost land.
 
 ## Install and Uninstall Compatibility:
 ### Forwards Compatability:
-- The mod doesn't edit or replace any files, only adds files. It should be forwards compatible with every future update!
+* The mod doesn't edit or replace any files, only adds files. It should be forwards compatible with every future update!
 ### Backwards Compatibility:
-- Same as above... The mod is compatible with prior versions, though don't go too far back because I'm not sure how far it is compatible with.
+* Same as above... The mod is compatible with prior versions, though don't go too far back because I'm not sure how far it is compatible with.
 ### Save Compatibility:
-- No need to worry about uninstalling, the mod only uses country, province and global flags which do not cause any save game damage upon uninstall.
-- You can safely use on any active save game and remove later if you wish.
+* No need to worry about uninstalling, the mod only uses country, province and global flags which do not cause any save game damage upon uninstall.
+* You can safely use on any active save game and remove later if you wish.
 
 ## AI
-- The AI will never use this mod or its features!
-- If a game is saved with any menu open, the AI will close it without changes.
-- If a setup menu is given to the AI through save trickery, the AI will pick 'Normal' for the Cheats Menu and 'Singleplayer' for the MP menu.
+* The AI will never use this mod or its features!
+* If a game is saved with any menu open, the AI will close it without changes.
+* If a setup menu is given to the AI through save trickery, the AI will pick 'Normal' for the Cheats Menu and 'Singleplayer' for the MP menu.
 
 
 ## Supported Languages:
-- English by [mat1432](https://steamcommunity.com/id/mat1432/)
-- German by [Thylon](https://steamcommunity.com/id/thylon125/)
+* English by [mat1432](https://steamcommunity.com/id/mat1432/)
+* German by [Thylon](https://steamcommunity.com/id/thylon125/)
 
 [GitHub Repository](https://github.com/mat1432/colonial_fixes/)
 Licensed under the [GNU General Public License v3.0](https://github.com/mat1432/colonial_fixes/edit/main//LICENSE)

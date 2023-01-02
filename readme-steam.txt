@@ -30,6 +30,7 @@ An event will fire at the start of the game to specify if you want to enable che
 [list]
     [*]You can specify to skip any colonies that have not yet cored all provinces to at least a territory, (Uncored land does not form colonies)
     [*]You can specify to ignore the colony coring progress and just full core everything (not allowed on Ironman saves, and disabled by 'No Cheats' option at game start)
+    [*][b]Provinces cannot be taken away from Active Players![/b]
 [/list]
 
 [h3]Undo Partitioning:[/h3]
@@ -38,7 +39,7 @@ An event will fire at the start of the game to specify if you want to enable che
     [*]Will only transfer your soverign or colonial lands that were taken in a previous partitioning to the current colony.
     [*]Follows the same logic as regular partitioning, and all nations whose lands are taken from during this process will be flagged as partitioned.
     [*]Will only work on colonies partitioned after Update 1.0.5.
-    [*][b]The Undo process cannot affect active Players![/b]
+    [*][b]Provinces cannot be taken away from Active Players![/b]
 [/list]
 
 [h2]Multiplayer Safety:[/h2]
