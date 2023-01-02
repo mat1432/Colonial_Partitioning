@@ -46,12 +46,12 @@ l_english:
 #    player protection settings menu
  cpt_4_title: "Colonial Partition - Player Protection Settings"
  cpt_4_desc: "Any colonies that were EVER a §YPlayer§!, can get §YProtection§! from partitioning. By default §YProtection§! is §GEnabled§!.\nProvinces CANNOT be taken away from Active Players!\n\nPlayer Protection Is: [Root.GetColonyPlayerSetting]"
- cpt_4_x: "§O(DISABLE)§! §YUnprotect§! §YPlayer§! Colonies §M(Selected)§!"
+ cpt_4_x: "§O(DISABLE)§! §YUnprotect§! §YPlayer§! Colonies"
  cpt_4_e: "§G(ENABLE)§! §YProtect§! §YPlayer§! Colonies"
 
 #    previous owner claims settings menu
  cpt_5_title: "Colonial Partition - Previous Owner Claims Settings"
- cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 3 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will §GKeep§! any §YTerritorial Cores§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 3 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will also §GKeep§! all §YTerritorial Cores§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nCurrently, Previous Owners will: [Root.GetColonyClaimsSetting]"
  cpt_5_1: "§RLose§! All §YCores§!"
  cpt_5_1_s: "§RLose§! All §YCores§! §M(Selected)§!"
  cpt_5_2: "§GGain§! §YClaims§!"
