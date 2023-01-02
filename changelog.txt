@@ -6,11 +6,12 @@
 [list]
     [*]Allow 'Undo Partitioning' Diplo Action on active players.
     [list]
+        [*]Reason: It only gives them provinces, I do not see the harm. Additionally this allows for some unforseen consequences to be undone without multiplayer savescum. (What this mod was made to avoid!)
         [*][i]Other Players are still always protected from this action![/i]
     [/list]
     [*]'Undo Partitioning' now counts for the Multiplayer delay.
     [list]
-        [i]It scans every province worldwide; It is more intensive than regular Partitioning![/i]
+        [i]Reason: It scans every province worldwide; It is more intensive than regular Partitioning![/i]
     [/list]
     [*]Allow 'Undo Partitioning' when cheats are disabled. [i]Testing Gameplay Balance (on you guys!); May be Reverted Later.[/i]
     [*]Minor Improvements to Player Protection descriptions, and the Player protection Settings menu.
