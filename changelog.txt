@@ -16,7 +16,7 @@
     [/list]
     [*]'Undo Partitioning' now counts for the Multiplayer delay.
     [list]
-        [i]Reason: It scans every province worldwide; It is more intensive than regular Partitioning![/i]
+        [*][i]Reason: It scans every province worldwide; It is more intensive than regular Partitioning![/i]
     [/list]
     [*]Allow 'Undo Partitioning' when cheats are disabled. [i]Testing Gameplay Balance (on you guys!); May be Reverted Later.[/i]
     [*]Minor Improvements to Player Protection descriptions, and the Player protection Settings menu.
