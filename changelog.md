@@ -1,4 +1,5 @@
-Made by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
+Made by mat1432 [Steam](https://steamcommunity.com/id/mat1432/) [GitHub](https://github.com/mat1432/Colonial_Partitioning)
+
 The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 * NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
