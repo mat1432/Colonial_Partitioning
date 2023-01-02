@@ -12,7 +12,7 @@
     [list]
         [i]It scans every province worldwide; It is more intensive than regular Partitioning![/i]
     [/list]
-    [*]Allow 'Undo Partitioning' when cheats are disabled. [i]Testing Gameplay Balance[/i]
+    [*]Allow 'Undo Partitioning' when cheats are disabled. [i]Testing Gameplay Balance; May be Reverted Later.[/i]
     [*]Minor Improvements to Player Protection descriptions, and the Player protection Settings menu.
     [*]Added Tooltip for cheats menu cheats options, they list the features that will be enabled by cheats
 [/list]
