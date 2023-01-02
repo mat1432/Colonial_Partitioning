@@ -47,7 +47,7 @@ cpt_3_3_s: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständige
 
 #    player protection settings menu
 cpt_4_title: "Kolonie Aufteilung - Spielerschutzeinstellungen"
-cpt_4_desc: "Alle Kolonien, die jemals von einem §YSpieler§! kontrolliert wurden, können §YSchutz§! von der Partitionierung erhalten. Standardmäßig ist der §YSchutz§! §Gaktiviert§!.\n\nSpielerschutz ist: [Root.GetColonyPlayerSetting]"
+cpt_4_desc: "Alle Kolonien, die jemals von einem §YSpieler§! kontrolliert wurden, können §YSchutz§! von der Partitionierung erhalten. Standardmäßig ist der §YSchutz§! §Gaktiviert§!.\nProvinzen können aktiven Spielern NICHT weggenommen werden!\n\nSpielerschutz ist: [Root.GetColonyPlayerSetting]"
 cpt_4_x: "§O(DEAKTIVIEREN)§! §YSpieler§! Kolonien §Ynicht schützen§! §M(Ausgewählt)§!"
 cpt_4_e: "§G(AKTIVIEREN)§! §YSchützt§! §YSpieler§! Kolonien"
 

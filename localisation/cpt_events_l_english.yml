@@ -45,7 +45,7 @@ l_english:
 
 #    player protection settings menu
  cpt_4_title: "Colonial Partition - Player Protection Settings"
- cpt_4_desc: "Any colonies that were EVER a §YPlayer§!, can get §YProtection§! from partitioning. By default §YProtection§! is §GEnabled§!.\n\nPlayer Protection Is: [Root.GetColonyPlayerSetting]"
+ cpt_4_desc: "Any colonies that were EVER a §YPlayer§!, can get §YProtection§! from partitioning. By default §YProtection§! is §GEnabled§!.\nProvinces CANNOT be taken away from Active Players!\n\nPlayer Protection Is: [Root.GetColonyPlayerSetting]"
  cpt_4_x: "§O(DISABLE)§! §YUnprotect§! §YPlayer§! Colonies §M(Selected)§!"
  cpt_4_e: "§G(ENABLE)§! §YProtect§! §YPlayer§! Colonies"
 
