@@ -8,7 +8,7 @@
     [list]
         [*][i]Other Players are still always protected from this action![/i]
     [/list]
-    [*]'Undo Partitioning' now counts for the Multiplayer delay. (It scans every province worldwide; It is more intensive than regular Partitioning!)
+    [*]'Undo Partitioning' now counts for the Multiplayer delay. [i]It scans every province worldwide; It is more intensive than regular Partitioning![/i]
 [/list]
 
 1.1.0b
