@@ -4,5 +4,8 @@ l_english:
  cpt_98_nocheat_tt: "Normally Ironman saves have some options disabled, this disables them completely."
  cpt_98_normal_tt: "Cheaty options are allowed on normal saves, Irnman saves still have cheats disabled."
  cpt_98_cheat_tt: "Ironman means nothing to me!"
+
+ cpt_98_cheatfeatures_tt: "Enables:\n * §YFull Core§! ALL Provinces §Y(Partitioning)§!\n * Instant Annex Colony §Y(Diplomacy)§!"
+
  cpt_99_sp_tt: "No delay between actions!"
  cpt_99_mp_tt: "The server may lag like hell, this will STOP ALL §YPlayer§!s from colony fixing within 30 days of each other."

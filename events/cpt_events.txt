@@ -492,6 +492,10 @@ country_event = {
 			clr_global_flag = colony_p_nocheat
 			clr_global_flag = colony_p_cheats
 		}
+		if = {
+			limit = { ironman = no }
+			custom_tooltip = cpt_98_cheatfeatures_tt
+		}
 	}
 	option = {
 		name = "cpt_98_cheat"
@@ -500,6 +504,7 @@ country_event = {
 			clr_global_flag = colony_p_nocheat
 			set_global_flag = colony_p_cheats
 		}
+		custom_tooltip = cpt_98_cheatfeatures_tt
 	}
 }
 # enable server spam prevention delays
