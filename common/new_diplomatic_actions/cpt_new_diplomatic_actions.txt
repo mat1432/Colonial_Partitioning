@@ -261,6 +261,7 @@ cpt_undo_partition = {
 							ai = yes
 							is_subject_of = root
 							is_colonial_nation = yes
+							NOT = { tag = from }
 
 							cpt_not_player_protected = { nation = this }
 							cpt_not_protected = yes
