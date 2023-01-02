@@ -239,103 +239,113 @@ cpt_undo_partition = {
 
     on_accept = {
 		custom_tooltip = cpt_undo_partitioning_tt
-		hidden_effect = {
-			set_global_flag = colony_p_ongoing
-			clr_global_flag = colony_p_delay
-
-			# this will be the cause of a LOT of lag!
-			every_province = {
-				limit = {
-					NOT = { is_capital_of = root }
-					has_province_flag = cpt_prev_@FROM
-					owner = {
-						ai = yes
-						is_subject_of = root
-						is_colonial_nation = yes
-
-						cpt_not_player_protected = { nation = this }
-						cpt_not_protected = yes
-					}
-				}
-				# for any active save games using older mod version. prevent glitches
-				clr_province_flag = territory_core
-				clr_province_flag = full_core
-
-				# remember core status
-				if = {
-					limit = { is_territorial_core = owner }
-					set_province_flag = territory_core
-				}
-				else_if = {
-					limit = { is_core = owner }
-					set_province_flag = full_core
-				}
-
-				# remember owner
-				owner = {
-					save_event_target = cpt_prev_owner
-					
-					# flag colony as partitioned already, used only for allowing the undo action
-					set_country_flag = cpt_prev_partitioned
-					prev = {
-						set_province_flag = cpt_prev_@PREV
-					}
-				}
-
-				if = {
-					limit = { has_construction = core }
-					cancel_construction = yes
-				}
-
-				remove_core = owner
-				cede_province = FROM
-
-				# previous owner regains cores
-				if = {
-					limit = { cpt_claims_3 = yes }
-					if = {
-						limit = { has_province_flag = territory_core }
-						add_territorial_core = event_target:cpt_prev_owner
-					}
-					if = {
-						limit = { has_province_flag = full_core }
-						add_core = event_target:cpt_prev_owner
-					}
-					add_claim = event_target:cpt_prev_owner
-				}
-				# previous owner gains claims
-				if = {
-					limit = { cpt_claims_2 = yes }
-					add_claim = event_target:cpt_prev_owner
-				}
-
-				# players always get the best treatment
-				if = {
-					limit = {
-						event_target:cpt_prev_owner = { OR = { was_player = yes ai = no } }
-					}
-					if = {
-						limit = { has_province_flag = territory_core }
-						add_territorial_core = event_target:cpt_prev_owner
-					}
-					if = {
-						limit = { has_province_flag = full_core }
-						add_core = event_target:cpt_prev_owner
-					}
-					# claim added after core. if core expires claim will remain
-					add_permanent_claim = event_target:cpt_prev_owner
-				}
-
-				# cleanup
-				clr_province_flag = territory_core
-				clr_province_flag = full_core
-			}
-			# mark as done
-			clr_global_flag = colony_p_ongoing
-			set_global_flag = colony_p_delay
-
-			FROM = { save_global_event_target_as = cpt_set_protection_from }
+		if = {
+			limit = { cpt_mp_delay_active = yes }
+			country_event = { id = cpt.97 } # fail event
 		}
-		country_event = { id = cpt.50 }
+		else_if = {
+			limit = { cpt_ongoing_activity = yes }
+			country_event = { id = cpt.97 } # fail event
+		}
+		else = {
+			hidden_effect = {
+				set_global_flag = colony_p_ongoing
+				clr_global_flag = colony_p_delay
+
+				# this will be the cause of a LOT of lag!
+				every_province = {
+					limit = {
+						NOT = { is_capital_of = root }
+						has_province_flag = cpt_prev_@FROM
+						owner = {
+							ai = yes
+							is_subject_of = root
+							is_colonial_nation = yes
+
+							cpt_not_player_protected = { nation = this }
+							cpt_not_protected = yes
+						}
+					}
+					# for any active save games using older mod version. prevent glitches
+					clr_province_flag = territory_core
+					clr_province_flag = full_core
+
+					# remember core status
+					if = {
+						limit = { is_territorial_core = owner }
+						set_province_flag = territory_core
+					}
+					else_if = {
+						limit = { is_core = owner }
+						set_province_flag = full_core
+					}
+
+					# remember owner
+					owner = {
+						save_event_target = cpt_prev_owner
+						
+						# flag colony as partitioned already, used only for allowing the undo action
+						set_country_flag = cpt_prev_partitioned
+						prev = {
+							set_province_flag = cpt_prev_@PREV
+						}
+					}
+
+					if = {
+						limit = { has_construction = core }
+						cancel_construction = yes
+					}
+
+					remove_core = owner
+					cede_province = FROM
+
+					# previous owner regains cores
+					if = {
+						limit = { cpt_claims_3 = yes }
+						if = {
+							limit = { has_province_flag = territory_core }
+							add_territorial_core = event_target:cpt_prev_owner
+						}
+						if = {
+							limit = { has_province_flag = full_core }
+							add_core = event_target:cpt_prev_owner
+						}
+						add_claim = event_target:cpt_prev_owner
+					}
+					# previous owner gains claims
+					if = {
+						limit = { cpt_claims_2 = yes }
+						add_claim = event_target:cpt_prev_owner
+					}
+
+					# players always get the best treatment
+					if = {
+						limit = {
+							event_target:cpt_prev_owner = { OR = { was_player = yes ai = no } }
+						}
+						if = {
+							limit = { has_province_flag = territory_core }
+							add_territorial_core = event_target:cpt_prev_owner
+						}
+						if = {
+							limit = { has_province_flag = full_core }
+							add_core = event_target:cpt_prev_owner
+						}
+						# claim added after core. if core expires claim will remain
+						add_permanent_claim = event_target:cpt_prev_owner
+					}
+
+					# cleanup
+					clr_province_flag = territory_core
+					clr_province_flag = full_core
+				}
+				# mark as done
+				clr_global_flag = colony_p_ongoing
+				set_global_flag = colony_p_delay
+
+				FROM = { save_global_event_target_as = cpt_set_protection_from }
+			}
+			country_event = { id = cpt.50 }
+		}
 	}
 }

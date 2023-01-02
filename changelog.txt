@@ -8,7 +8,10 @@
     [list]
         [*][i]Other Players are still always protected from this action![/i]
     [/list]
-    [*]'Undo Partitioning' now counts for the Multiplayer delay. [i]It scans every province worldwide; It is more intensive than regular Partitioning![/i]
+    [*]'Undo Partitioning' now counts for the Multiplayer delay.
+    [list]
+        [i]It scans every province worldwide; It is more intensive than regular Partitioning![/i]
+    [/list]
     [*]Allow 'Undo Partitioning' when cheats are disabled. [i]Testing Gameplay Balance[/i]
     [*]Minor Improvements to Player Protection descriptions, and the Player protection Settings menu.
     [*]Added Tooltip for cheats menu cheats options, they list the features that will be enabled by cheats
