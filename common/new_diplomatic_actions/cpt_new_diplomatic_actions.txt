@@ -213,7 +213,7 @@ cpt_undo_partition = {
 
     is_visible = {
 		ai = no
-		cpt_cheats_allowed = yes
+		# cpt_cheats_allowed = yes
         FROM = {
 			is_subject_of = root
 			is_colonial_nation = yes
@@ -221,7 +221,7 @@ cpt_undo_partition = {
     }
 
     is_allowed = {
-		cpt_cheats_allowed = yes
+		# cpt_cheats_allowed = yes
 		# FROM = {
 		# 	# ai = yes # should player colonies be messed with so easily?
 		# 	cpt_not_player_protected = { nation = this }
