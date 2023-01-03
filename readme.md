@@ -3,6 +3,9 @@
 
 <img src="/thumbnail.png" style="float:right;width:200px;height:200px;" />
 
+Steam Workshop: [https://steamcommunity.com/sharedfiles/filedetails/?id=2905045887](https://steamcommunity.com/sharedfiles/filedetails/?id=2905045887)
+Paradox Mods: [https://mods.paradoxplaza.com/mods/55714/Any](https://mods.paradoxplaza.com/mods/55714/Any)
+
 **1.34.X ; This Mod Does Not Need to be Updated!**
 
 This mod allows you to strip away all provinces any of your colonies has, that is in a colony charter outside their capital charter!
