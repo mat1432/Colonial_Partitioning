@@ -7,6 +7,7 @@ The change logs are in English, so far any and all translations of the Change Lo
 * Bug fix: Cheat menus can now be opened mid game (properly)
   * They were fire_only_once, this does not allow them to be opened after already fired.
   * *This will cause them to fire again on any active save game started before this update*
+
 *Cheats Menu: 'event cpt.98'*
 *Multiplayer Menu: 'event cpt.99'*
 
