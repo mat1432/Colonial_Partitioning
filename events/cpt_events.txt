@@ -452,14 +452,11 @@ country_event = {
 		picture = DECLARATION_INDEPENDENCE_eventPicture
 	}
 
-	fire_only_once = yes
-
+	is_triggered_only = yes
 	trigger = {
 		ai = no
 	}
-	mean_time_to_happen = {
-		days = 1
-	}
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = colony_p_menu
@@ -517,15 +514,11 @@ country_event = {
 		picture = DECLARATION_INDEPENDENCE_eventPicture
 	}
 
-	fire_only_once = yes
-
-	# is_triggered_only = yes
+	is_triggered_only = yes
 	trigger = {
 		ai = no
 	}
-	mean_time_to_happen = {
-		days = 1
-	}
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = colony_p_menu
@@ -591,6 +584,41 @@ country_event = {
 
 ####################################################################################################
 # Recursive Events
+
+country_event = {
+	id = cpt.998
+	title = "cpt_98_title"
+	desc = "cpt_98_desc"
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "cpt_r_a"
+		country_event = { id = cpt.98 }
+	}
+}
+country_event = {
+	id = cpt.999
+	title = "cpt_99_title"
+	desc = "cpt_99_desc"
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "cpt_r_a"
+		country_event = { id = cpt.99 }
+	}
+}
 
 country_event = {
 	id = cpt.1001
