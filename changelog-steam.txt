@@ -2,6 +2,14 @@
 ### The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
+1.1.1c
+[list]
+    [*]Bug fix: Cheat menus can now be opened mid game (properly)
+    [list]
+        [*]They were fire_only_once, this does not allow them to be opened after already fired.
+    [/list]
+[/list]
+
 1.1.1b
 [list]
     [*]Bug Fix: Prevents 'Undo Partitioning' from processing provinces already owned by the recipient!
