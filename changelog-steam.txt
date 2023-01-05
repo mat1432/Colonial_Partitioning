@@ -10,6 +10,8 @@
         [*][i]This will cause them to fire again on any active save game before this update[/i]
     [/list]
 [/list]
+[i]Cheats Menu: 'event cpt.98'[/i]
+[i]Multiplayer Menu: 'event cpt.99'[/i]
 
 1.1.1b
 [list]
