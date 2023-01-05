@@ -7,6 +7,7 @@
     [*]Bug fix: Cheat menus can now be opened mid game (properly)
     [list]
         [*]They were fire_only_once, this does not allow them to be opened after already fired.
+        [*][i]This will cause them to fire again on any active save game before this update[/i]
     [/list]
 [/list]
 
