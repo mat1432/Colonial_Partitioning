@@ -2,6 +2,18 @@
 ### The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
+1.1.2
+[list]
+    [*]Bug Fixes:
+    [list]
+        [*]Undo Partitioning: Could not give YOUR soverign lands to the subject specified.
+    [/list]
+    [*]Refactored Code:
+    [list]
+        [*]Undo Partitioning: Reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
+    [/list]
+[/list]
+
 1.1.1c
 [list]
     [*]Bug fix: Cheat menus can now be opened mid game (properly)
