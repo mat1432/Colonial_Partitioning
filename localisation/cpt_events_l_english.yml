@@ -16,7 +16,7 @@ l_english:
 
 #    main menu
  cpt_1_title: "£cptcolonist£ Colony Partition - Main Menu"
- cpt_1_desc: "To Access §YProtection Mechanics§! for specific §YColonies§!, see the §YInfluence§! Actions in the §YDiplomacy Screen§!\nNote for Multiplayer: §YPlayers§! will generally recieve Default §YProtection§!, and will ALWAYS retain §YCores§!!\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_1_desc: "To Access §YProtection Mechanics§! for specific §YColonies§!, see the §YInfluence§! Actions in the §YDiplomacy Screen§!\nNote for Multiplayer: §YPlayers§! will generally recieve Default §YProtection§!, and will ALWAYS retain §YCores§!!\n\nNew Owner Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Core Setting: [Root.GetColonyClaimsSetting]"
  cpt_start: "Begin §O(May Cause Serious Lag)§!"
  cpt_start_x: "Begin §O(Not Available Right Now)§!"
  cpt_open_settings: "§MOpen Mod Settings§!"
@@ -26,7 +26,7 @@ l_english:
 
 #    settings menu
  cpt_2_title: "£cptcolonist£ Colony Partition - Settings Menu"
- cpt_2_desc: "Settings Menu\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Will: [Root.GetColonyClaimsSetting]"
+ cpt_2_desc: "Settings Menu\n\nNew Owner Core Setting: [Root.GetColonyCoreSetting]\nPlayer Protection Is: [Root.GetColonyPlayerSetting]\nPrevious Owners Core Setting: [Root.GetColonyClaimsSetting]"
  cpt_open_core_settings: "§MOpen New Owner Cores & Claims Settings§!"
  cpt_open_player_settings: "§MOpen Player Protection Settings§!"
  cpt_open_claims_settings: "§MOpen Previous Owner Cores & Claims Settings§!"
@@ -34,7 +34,7 @@ l_english:
 
 #    core settings menu
  cpt_3_title: "£cptcolonist£ Colonial Partition - New Owner Cores & Claims Settings"
- cpt_3_desc: "When transacting §YCores§!, how should they be processed?\n\nThere are 3 options:\n 1 = We Translate §YCores§!\n     §YFull Cores§!, §YTerritorial Cores§! & §YNo Cores§!, will be perfectly transferred to us.\n 2 = We Skip §YUncored Colonies§! §M(Default)§!\n     Any Colonies with missing §YCores§!, will be skipped\n     §YFull Cores§! & §YTerritorial Cores§!, will be perfectly transferred to us.\n 3 = We §YFull Core Everything§! §M(Cheats)§!\n     We §GGain§! §YFull Cores§! on all provinces ceded to us!\n\nCurrent Core Setting: [Root.GetColonyCoreSetting]"
+ cpt_3_desc: "When transacting §YCores§!, how should they be processed?\n\nThere are 3 options:\n 1 = We Translate §YCores§!\n     §YFull Cores§!, §YTerritorial Cores§! & §YNo Cores§!, will be perfectly transferred to us.\n 2 = We Skip §YUncored Colonies§! §M(Default)§!\n     Any Colonies with missing §YCores§!, will be skipped\n     §YFull Cores§! & §YTerritorial Cores§!, will be perfectly transferred to us.\n 3 = We §YFull Core Everything§! §M(Cheats)§!\n     We §GGain§! §YFull Cores§! on all provinces ceded to us!\n\nNew Owner Core Setting: [Root.GetColonyCoreSetting]"
  cpt_3_1: "Translate §YCores§!"
  cpt_3_1_s: "Translate §YCores§! §M(Selected)§!"
  cpt_3_2: "Skip §YUncored Colonies§!"
@@ -51,7 +51,7 @@ l_english:
 
 #    previous owner claims settings menu
  cpt_5_title: "£cptcolonist£ Colonial Partition - Previous Owner Cores & Claims Settings"
- cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 4 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will also §GKeep§! all §YTerritorial Cores§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§! §M(Cheats)§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nCurrently, Previous Owners will: [Root.GetColonyClaimsSetting]"
+ cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 4 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will also §GKeep§! all §YTerritorial Cores§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§! §M(Cheats)§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nPrevious Owners Core Setting: [Root.GetColonyClaimsSetting]"
  cpt_5_1: "§RLose§! All §YCores§!"
  cpt_5_1_s: "§RLose§! All §YCores§! §M(Selected)§!"
  cpt_5_2: "§GGain§! §YClaims§!"
