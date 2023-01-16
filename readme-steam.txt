@@ -22,7 +22,7 @@ An event will fire at the start of the game to specify if you want to enable che
 [list]
     [*]Can Instant Annex any of your colonies (requires enabling cheats at game start, or 'normal' on non-Ironman saves)
     [*]You can specifically set colonies to be protected from partitioning / instant annex
-    [*]You can undo the partitioning of a colony (Only works on or after update 1.0.5)
+    [*]You can undo the partitioning of a colony (Only works on or after update 1.0.5 (29 Dec 2022))
     [*]Will only undo lands that are your sovering provinces (Will NOT transfer lands owned by tributaries)
 [/list]
 
@@ -36,9 +36,12 @@ An event will fire at the start of the game to specify if you want to enable che
 [h3]Undo Partitioning:[/h3]
 [list]
     [*]Accessed by 'Undo Partitioning' Diplomatic Action under Influence Category
-    [*]Will only transfer your soverign or colonial lands that were taken in a previous partitioning to the current colony.
+    [*]Will return your provinces or colonial provinces that were taken away using one of the mods features.
+    [list]
+        [*]Does not affect lands owned by non colony subjects (Like vassals or PUs)
+    [/list]
     [*]Follows the same logic as regular partitioning, and all nations whose lands are taken from during this process will be flagged as partitioned.
-    [*]Will only work on colonies partitioned after Update 1.0.5.
+    [*]Will only work on colonies partitioned after Update 1.0.5 (29 Dec 2022)
     [*][b]Provinces cannot be taken away from Active Players![/b]
 [/list]
 
