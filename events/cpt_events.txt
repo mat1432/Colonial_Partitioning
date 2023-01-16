@@ -465,12 +465,9 @@ country_event = {
 	}
 	after = {
 		hidden_effect = {
+			cpt_validate = yes
 			clr_country_flag = colony_p_menu
 		}
-		# country_event = {
-		# 	id = cpt.99
-		# 	days = 1
-		# }
 	}
 
 	option = {
