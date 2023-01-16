@@ -51,7 +51,7 @@ l_english:
 
 #    previous owner claims settings menu
  cpt_5_title: "£cptcolonist£ Colonial Partition - Previous Owner Cores & Claims Settings"
- cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 4 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will also §GKeep§! all §YTerritorial Cores§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nCurrently, Previous Owners will: [Root.GetColonyClaimsSetting]"
+ cpt_5_desc: "When transacting §YCores§!, should the Previous Owner maintain their claims?\n\nThere are 4 options:\n 1 = They §RLose§! All §YCores§!\n 2 = They §GGain§! Claims §M(Default)§!\n 3 = They §GKeep§! All §YCores§! & §GGain§! §YClaims§!\n     Note: They will also §GKeep§! all §YTerritorial Cores§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§! §M(Cheats)§!\n\nNote: All Colonies that were EVER a Player will §GKeep§! All §YCores§! & §GGain§! §YPermanent Claims!§!\n\nCurrently, Previous Owners will: [Root.GetColonyClaimsSetting]"
  cpt_5_1: "§RLose§! All §YCores§!"
  cpt_5_1_s: "§RLose§! All §YCores§! §M(Selected)§!"
  cpt_5_2: "§GGain§! §YClaims§!"
