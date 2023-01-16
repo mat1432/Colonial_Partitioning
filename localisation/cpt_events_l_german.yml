@@ -55,7 +55,7 @@ cpt_4_e: "§G(AKTIVIEREN)§! §YSchützt§! §YSpieler§! Kolonien"
 cpt_5_title: "Kolonie Aufteilung - Einstellungen für Vorbesitzeransprüche"
 # edit: deepl
 # Confirm for contextual accuracy
-cpt_5_desc: "Sollte der Voreigentümer bei der Übertragung von §YKernprovinzen§! seine Ansprüche behalten?\n\nEs gibt 4 Möglichkeiten:\n 1 = Sie §Rverlieren§! alle §YKernprovinzen§!\n 2 = Sie §Gerhalten§! Ansprüche §M(Standard)§!\n 3 = Sie §Gerhalten§! alle §YKernprovinzen§! & §Gerhalten§! §YAnsprüche§!\n Hinweis: Sie werden alle §YTerritorialen Kernprovinzen§! §Gbehalten§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§! [DeepL Übersetzer]\n\nAnmerkung: Alle Kolonien, die jemals von einem Spieler kontrolliert wurden, werden alle §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!\n\nVorbesitzer werden: [Root.GetColonyClaimsSetting]"
+cpt_5_desc: "Sollte der Voreigentümer bei der Übertragung von §YKernprovinzen§! seine Ansprüche behalten?\n\nEs gibt 4 Möglichkeiten:\n 1 = Sie §Rverlieren§! alle §YKernprovinzen§!\n 2 = Sie §Gerhalten§! Ansprüche §M(Standard)§!\n 3 = Sie §Gerhalten§! alle §YKernprovinzen§! & §Gerhalten§! §YAnsprüche§!\n Hinweis: Sie werden alle §YTerritorialen Kernprovinzen§! §Gbehalten§!\n 4 = Sie erhalten volle Kerne und Ansprüche [DeepL Übersetzer]\n\nAnmerkung: Alle Kolonien, die jemals von einem Spieler kontrolliert wurden, werden alle §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!\n\nVorbesitzer werden: [Root.GetColonyClaimsSetting]"
 cpt_5_1: "§RVerliert§! alle §YKernprovinzen§!"
 cpt_5_1_s: "§RVerliert§! alle §YKernprovinzen§! §M(Ausgewählt)§!"
 cpt_5_2: "§GErhält§! §YAnsprüche§!"
