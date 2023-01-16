@@ -69,7 +69,11 @@ defined_text = {
     }
     text = { # no cheats allowed. returns {X icon}{ironman fist icon}
         localisation_key = cpt_no_cheat_2
-		trigger = { ironman = yes }
+		trigger = {
+			NOT = { has_global_flag = colony_p_nocheat }
+			NOT = { has_global_flag = colony_p_cheats }
+			ironman = yes
+		}
     }
     text = { # all cheats allowed. returns {checkmark icon}{:\>}
         localisation_key = cpt_no_cheat_3
