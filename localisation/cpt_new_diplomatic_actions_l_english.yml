@@ -1,26 +1,26 @@
 ﻿# Written by mat1432 https://steamcommunity.com/id/mat1432/ (Steam) https://github.com/mat1432/Colonial_Partitioning (GitHub)
 l_english:
 # new diplomatic actions
- cpt_protect_colony: "£cptsettlericon£ Protect from Colony Partition"
- cpt_protect_colony_title: "£cptsettlericon£ Protect from Colony Partition"
+ cpt_protect_colony: "£cptcolonist£ Protect from Colony Partition"
+ cpt_protect_colony_title: "£cptcolonist£ Protect from Colony Partition"
  cpt_protect_colony_desc: "They §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
  cpt_protect_colony_tooltip: "They §GGain§! §YProtected§! status, colony partitions will never strip them of their lands!\nCan be revoked at any time."
- cpt_protect_colony_alert_tooltip: "£cptsettlericon£ Protect from Colony Partition"
+ cpt_protect_colony_alert_tooltip: "£cptcolonist£ Protect from Colony Partition"
 
- cpt_unprotect_colony: "£cptsettlericon£ Unprotect from Colony Partition"
- cpt_unprotect_colony_title: "£cptsettlericon£ Unprotect from Colony Partition"
+ cpt_unprotect_colony: "£cptcolonist£ Unprotect from Colony Partition"
+ cpt_unprotect_colony_title: "£cptcolonist£ Unprotect from Colony Partition"
  cpt_unprotect_colony_desc: "They §RLose§! §YProtected§! status!"
  cpt_unprotect_colony_tooltip: "They §RLose§! §YProtected§! status!"
- cpt_unprotect_colony_alert_tooltip: "£cptsettlericon£ Unprotect from Colony Partition"
+ cpt_unprotect_colony_alert_tooltip: "£cptcolonist£ Unprotect from Colony Partition"
 
- cpt_annex_colony: "£cptsettlericon£ Annex Colony"
- cpt_annex_colony_title: "£cptsettlericon£ Annex Colony"
+ cpt_annex_colony: "£cptcolonist£ Annex Colony"
+ cpt_annex_colony_title: "£cptcolonist£ Annex Colony"
  cpt_annex_colony_desc: "Follows the same logic as Colony Partitioning! The entire colony is annexed by us!\nWe will NOT inherit their Treasury, Armies, Leaders, or Fleets!"
  cpt_annex_colony_tooltip: "Follows the same logic as Colony Partitioning! The entire colony is annexed by us!\nWe will NOT inherit their Treasury, Armies, Leaders, or Fleets!"
- cpt_annex_colony_alert_tooltip: "£cptsettlericon£ Annex Colony"
+ cpt_annex_colony_alert_tooltip: "£cptcolonist£ Annex Colony"
 
- cpt_undo_partition: "£cptsettlericon£ Undo Partitioning"
- cpt_undo_partition_title: "£cptsettlericon£ Undo Partitioning"
+ cpt_undo_partition: "£cptcolonist£ Undo Partitioning"
+ cpt_undo_partition_title: "£cptcolonist£ Undo Partitioning"
  cpt_undo_partition_desc: "Finds all provinces in the world that was taken during partitioning, and gives them back.\nThis does NOT give them Cores or Claims, they are required to make new Cores if need be!\nProvinces CANNOT be taken away from Active Players!\nFollows the same logic as all Partitioning features.\nIf you Annex the Colony or it changes to a Formable: They will lose all lands recognised as taken!\n§OThis Will Cause SEVERE LAG!§!"
  cpt_undo_partition_tooltip: "Finds all provinces in the world that was taken during partitioning, and gives them back.\nThis does NOT give them Cores or Claims, they are required to make new Cores if need be!\nProvinces CANNOT be taken away from Active Players!\nFollows the same logic as all Partitioning features.\nIf you Annex the Colony or it changes to a Formable: They will lose all lands recognised as taken!\n§OThis Will Cause SEVERE LAG!§!"
- cpt_undo_partition_alert_tooltip: "£cptsettlericon£ Undo Partitioning"
+ cpt_undo_partition_alert_tooltip: "£cptcolonist£ Undo Partitioning"

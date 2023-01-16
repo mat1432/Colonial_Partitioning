@@ -7,7 +7,7 @@ spriteTypes = {
 
 	# colonist icon
 	spriteType = {
-		name = "GFX_text_cptsettlericon"
+		name = "GFX_text_cptcolonist"
 		texturefile = "gfx/interface/icon_envoy_settler.dds"
 	}
 	# colony subject type icon
