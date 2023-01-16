@@ -4,13 +4,13 @@
 
 1.1.2
 [list]
-    [*]Bug Fixes:
+    [*]Undo Partitioning:
     [list]
-        [*]Undo Partitioning: Could not give YOUR soverign lands to the subject specified.
-    [/list]
-    [*]Refactored Code:
-    [list]
-        [*]Undo Partitioning: Reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
+        [*]Bug Fix: Could not give YOUR soverign lands to the subject specified.
+        [*]Refactored Code: Reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
+        [list]
+            [*][i]Still very laggy[/i]
+        [/list]
     [/list]
 [/list]
 
