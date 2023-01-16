@@ -408,7 +408,7 @@ country_event = {
 		}
 		ai_chance = { factor = 0 }
 		custom_tooltip = cpt_claims_4_tt
-		cpt_core_set = { option = 4 }
+		cpt_claims_set = { option = 4 }
 	}
 	option = {
 		name = "cpt_5_4_x"
@@ -427,7 +427,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		highlight = yes
 		custom_tooltip = cpt_claims_4_tt
-		cpt_core_set = { option = 4 }
+		cpt_claims_set = { option = 4 }
 	}
 }
 
