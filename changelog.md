@@ -4,6 +4,11 @@ The change logs are in English, so far any and all translations of the Change Lo
 * NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
 ## 1.1.2
+* Colony Core Settings: Renamed to 'New Owner Cores & Claims Setting'. *Or similar equivalent*
+* Previous Owner Claims Settings: Renamed to 'Previous Owner Cores & Claims Setting'. *Or similar equivalent*
+* Previous Owner Cores & Claims:
+  * Added 4th option, 'Gain Full Cores & Claims' **Only Enabled by Cheats**
+    * *If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.*
 * Undo Partitioning:
   * Bug Fix: Could not give YOUR soverign lands to the subject specified.
   * Refactored Code: Slightly reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.

@@ -4,6 +4,15 @@
 
 1.1.2
 [list]
+    [*]Colony Core Settings: Renamed to 'New Owner Cores & Claims Setting'. [i]Or similar equivalent[/i]
+    [*]Previous Owner Claims Settings: Renamed to 'Previous Owner Cores & Claims Setting'. [i]Or similar equivalent[/i]
+    [*]Previous Owner Cores & Claims Settings:
+    [list]
+        [*]Added 4th option, 'Gain Full Cores & Claims' [b]Only Enabled by Cheats[/b]
+        [list]
+            [*][i]If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.[/i]
+        [/list]
+    [/list]
     [*]Undo Partitioning:
     [list]
         [*]Bug Fix: Could not give YOUR soverign lands to the subject specified.
