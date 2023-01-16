@@ -4,4 +4,15 @@ spriteTypes = {
 		name = "GFX_text_ironman"
 		texturefile = "gfx/interface/ironman_icon.dds"
 	}
+
+	# colonist icon
+	spriteType = {
+		name = "GFX_text_cptsettlericon"
+		texturefile = "gfx/interface/icon_envoy_settler.dds"
+	}
+	# colony subject type icon
+	spriteType = {
+		name = "GFX_text_cptcolonysubject"
+		texturefile = "gfx/interface/subject_colony_icon.dds"
+	}
 }

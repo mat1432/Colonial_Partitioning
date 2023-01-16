@@ -4,6 +4,7 @@
 
 1.1.2
 [list]
+    [*]Now uses Colonist icon instead of '<CP>' as prefix text
     [*]Colony Core Settings: Renamed to 'New Owner Cores & Claims Setting'. [i]Or similar equivalent[/i]
     [*]Previous Owner Claims Settings: Renamed to 'Previous Owner Cores & Claims Setting'. [i]Or similar equivalent[/i]
     [*]Previous Owner Cores & Claims Settings:
