@@ -583,7 +583,7 @@ country_event = {
 }
 
 ####################################################################################################
-# Recursive Events
+# Fire Only Once Events
 
 country_event = {
 	id = cpt.1098
@@ -619,6 +619,9 @@ country_event = {
 		country_event = { id = cpt.99 }
 	}
 }
+
+####################################################################################################
+# Recursive Events
 
 country_event = {
 	id = cpt.1001
