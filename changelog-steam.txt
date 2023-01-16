@@ -7,7 +7,7 @@
     [*]Undo Partitioning:
     [list]
         [*]Bug Fix: Could not give YOUR soverign lands to the subject specified.
-        [*]Refactored Code: Reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
+        [*]Refactored Code: Slightly reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
         [list]
             [*][i]Still very laggy[/i]
         [/list]

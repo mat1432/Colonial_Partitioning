@@ -6,7 +6,7 @@ The change logs are in English, so far any and all translations of the Change Lo
 ## 1.1.2
 * Undo Partitioning:
   * Bug Fix: Could not give YOUR soverign lands to the subject specified.
-  * Refactored Code: Reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
+  * Refactored Code: Slightly reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
     * *Still very laggy*
 
 ## 1.1.1c
