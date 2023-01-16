@@ -341,8 +341,9 @@ country_event = {
 
 	# there are 3 options for all provinces lost
 	# 1 = previous owner loses all cores
-	# 2 = previous owner gains 50 year claims
+	# 2 = previous owner gains temporary claims
 	# 3 = previous owner keeps all cores
+    # 4 = previous owner gains full cores and temporary claims (cheaty)
 
 	# regardless of option, if colony was EVER a player. they keep all cores and gain permanent claims
 
@@ -363,7 +364,7 @@ country_event = {
 		cpt_claims_set = { option = 1 }
 	}
 
-	# gains 50 year claims
+	# gains temporary claims
 	option = {
 		name = "cpt_5_2"
 		trigger = { cpt_claims_2 = no }
@@ -396,6 +397,37 @@ country_event = {
 		highlight = yes
 		custom_tooltip = cpt_claims_3_tt
 		cpt_claims_set = { option = 3 }
+	}
+
+	# cheaty full core all provinces
+	option = {
+		name = "cpt_5_4"
+		trigger = {
+			cpt_cheats_allowed = yes
+			cpt_claims_4 = no
+		}
+		ai_chance = { factor = 0 }
+		custom_tooltip = cpt_claims_4_tt
+		cpt_core_set = { option = 4 }
+	}
+	option = {
+		name = "cpt_5_4_x"
+		trigger = {
+			cpt_cheats_allowed = no
+			cpt_claims_4 = no
+		}
+		ai_chance = { factor = 0 }
+		custom_tooltip = colony_p_ironman
+		custom_tooltip = cpt_claims_4_tt
+	}
+
+	option = {
+		name = "cpt_5_4_s"
+		trigger = { cpt_claims_4 = yes }
+		ai_chance = { factor = 100 }
+		highlight = yes
+		custom_tooltip = cpt_claims_4_tt
+		cpt_core_set = { option = 4 }
 	}
 }
 

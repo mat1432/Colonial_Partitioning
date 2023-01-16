@@ -53,13 +53,20 @@ cpt_4_e: "§G(AKTIVIEREN)§! §YSchützt§! §YSpieler§! Kolonien"
 
 #    previous owner claims settings menu
 cpt_5_title: "Kolonie Aufteilung - Einstellungen für Vorbesitzeransprüche"
-cpt_5_desc: "Sollte der Voreigentümer bei der Übertragung von §YKernprovinzen§! seine Ansprüche behalten?\n\nEs gibt 3 Möglichkeiten:\n 1 = Sie §Rverlieren§! alle §YKernprovinzen§!\n 2 = Sie §Gerhalten§! Ansprüche §M(Standard)§!\n 3 = Sie §Gerhalten§! alle §YKernprovinzen§! & §Gerhalten§! §YAnsprüche§!\n Hinweis: Sie werden alle §YTerritorialen Kernprovinzen§! §Gbehalten§!\n\nAnmerkung: Alle Kolonien, die jemals von einem Spieler kontrolliert wurden, werden alle §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!\n\nVorbesitzer werden: [Root.GetColonyClaimsSetting]"
+# edit: deepl
+# Confirm for contextual accuracy
+cpt_5_desc: "Sollte der Voreigentümer bei der Übertragung von §YKernprovinzen§! seine Ansprüche behalten?\n\nEs gibt 4 Möglichkeiten:\n 1 = Sie §Rverlieren§! alle §YKernprovinzen§!\n 2 = Sie §Gerhalten§! Ansprüche §M(Standard)§!\n 3 = Sie §Gerhalten§! alle §YKernprovinzen§! & §Gerhalten§! §YAnsprüche§!\n Hinweis: Sie werden alle §YTerritorialen Kernprovinzen§! §Gbehalten§!\n 4 = They §GGain§! §YFull Cores§! & §YClaims§! [DeepL Übersetzer]\n\nAnmerkung: Alle Kolonien, die jemals von einem Spieler kontrolliert wurden, werden alle §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!\n\nVorbesitzer werden: [Root.GetColonyClaimsSetting]"
 cpt_5_1: "§RVerliert§! alle §YKernprovinzen§!"
 cpt_5_1_s: "§RVerliert§! alle §YKernprovinzen§! §M(Ausgewählt)§!"
 cpt_5_2: "§GErhält§! §YAnsprüche§!"
 cpt_5_2_s: "§GErhält§! §YAnsprüche§! §M(Ausgewählt)§!"
 cpt_5_3: "§GBehält§! alle §YKernprovinzen§! & §Gehält§! §YAnsprüche§!"
 cpt_5_3_s: "§GBehält§! alle §YKernprovinzen§! & §Gerhält§! §YAnsprüche§! §M(Ausgewählt)§!"
+# edit: deepl
+# copy pasted from cpt_3_3, cpt_3_3_x, cpt_3_3_s; Confirm for contextual accuracy
+cpt_5_4: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! [Root.GetColonyNoCheat]"
+cpt_5_4_x: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! [Root.GetColonyNoCheat]"
+cpt_5_4_s: "§M(Cheats)§! Macht ALLE abgetretenen Provinzen zu §YVollständigen Kernprovinzen§!! §M(Ausgewählt)§!"
 
 # protect colony event alternative
  cpt_50_title: "Kolonieschutz Einstellen"

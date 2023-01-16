@@ -6,5 +6,9 @@
 cpt_98_nocheat_tt: "Normalerweise sind bei Ironman-Spielständen einige Optionen deaktiviert, mit dieser Option werden sie vollständig deaktiviert."
 cpt_98_normal_tt: "Cheaty-Optionen sind bei normalen Spielständen erlaubt, bei Ironman-Spielständen sind Cheats noch immer deaktiviert."
 cpt_98_cheat_tt: "Ironman bedeutet mir nichts!"
+
+# edit: deepl
+cpt_98_cheatfeatures_tt: "Ermöglicht:\n * Neuer Besitzer: Voller Kern ALLE Provinzen\n * Vorbesitzer: Voller Kern ALLE Provinzen\n * Sofortige Annexkolonie (Diplomatie)\n[DeepL Übersetzer]"
+
 cpt_99_sp_tt: "Keine Verzögerung zwischen Aktionen!"
 cpt_99_mp_tt: "Der Server kann höllisch laggen, dies wird ALLE §YSpieler§!s davon abhalten, die Kolonie innerhalb von 30 Tagen zu reparieren."

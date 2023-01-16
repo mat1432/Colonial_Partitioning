@@ -40,6 +40,10 @@ defined_text = {
         localisation_key = cpt_claims_setting_loc3
         trigger = { cpt_claims_3 = yes }
 	}
+	text = {
+        localisation_key = cpt_claims_setting_loc4
+        trigger = { cpt_claims_4 = yes }
+	}
 }
 
 

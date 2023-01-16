@@ -37,6 +37,17 @@ cpt_validate = {
 			clr_global_flag = colony_p_nocheat
 			clr_global_flag = colony_p_cheats
 		}
+		if = { # Cheats disabled, set illegal options to defaults
+			limit = { cpt_cheats_allowed = no }
+			if = {
+				limit = { cpt_core_3 = yes }
+				cpt_core_set = { option = 2 }
+			}
+			if = {
+				limit = { cpt_claims_4 = yes }
+				cpt_claims_set = { option = 2 }
+			}
+		}
 	}
 }
 
@@ -105,6 +116,10 @@ cpt_start = {
 	else_if = {
 		limit = { cpt_claims_3 = yes }
 		custom_tooltip = cpt_claims_3_tt
+	}
+	else_if = {
+		limit = { cpt_claims_4 = yes }
+		custom_tooltip = cpt_claims_4_tt
 	}
 	custom_tooltip = cpt_claims_player_tt
 
@@ -176,6 +191,15 @@ cpt_start = {
 				cede_province = ROOT
 
 
+				# previous owner gains full cores & claims
+				if = {
+					limit = { cpt_claims_4 = yes }
+					add_core = PREV
+					add_claim = PREV
+					#clean
+					clr_province_flag = territory_core
+					clr_province_flag = full_core
+				}
 				# previous owner regains cores
 				if = {
 					limit = { cpt_claims_3 = yes }

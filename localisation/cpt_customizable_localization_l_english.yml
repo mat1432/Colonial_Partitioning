@@ -8,6 +8,7 @@ l_english:
  cpt_claims_setting_loc1: "§RLose§! All §YCores§!"
  cpt_claims_setting_loc2: "§GGain§! §YClaims§!"
  cpt_claims_setting_loc3: "§GKeep§! All §YCores§! & §GGain§! §YClaims§!"
+ cpt_claims_setting_loc4: "§GGain§! §YFull Cores§! & §YPermanent Claims§!"
 
  cpt_player_setting_enabled: "§GEnabled§!"
  cpt_player_setting_disabled: "§RDisabled§!"

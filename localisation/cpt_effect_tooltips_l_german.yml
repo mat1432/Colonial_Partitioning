@@ -34,4 +34,6 @@ cpt_undo_partitioning_tt: "Findet alle Provinzen in der Welt, die während der A
 cpt_claims_1_tt: "\nDer Vorbesitzer §Rverliert§! alle §YKernprovinzen§!"
 cpt_claims_2_tt: "\nDer Vorbesitzer §Gerhält§! §YAnsprüche§!"
 cpt_claims_3_tt: "\nDer Vorbesitzer wird seine §YKernprovinzen§! §Gbehalten§! (einschließlich §YTerritoriale Kernprovinzen§!)"
+# edit: deepl
+cpt_claims_4_tt: "\nDer Vorbesitzer erhält volle Kerne und Ansprüche [DeepL Übersetzer]"
 cpt_claims_player_tt: "\n§YSpieler-Kolonien§! werden IMMER Ihre §YKernprovinzen§! §Gbehalten§! & §Gerhalten§! §YDauerhafte Ansprüche§!"

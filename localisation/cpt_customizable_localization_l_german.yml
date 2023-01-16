@@ -10,6 +10,8 @@ cpt_core_setting_loc3: "§M(Cheats)§! §YVollständige Kernprovinzen§! ALLE ab
 cpt_claims_setting_loc1: "§RVerliert§! alle §YKernprovinzen§!"
 cpt_claims_setting_loc2: "§GErhaltet§! §YAnsprüche§!"
 cpt_claims_setting_loc3: "§GBehaltet§! alle §YKernprovinzen§! & §Gerhaltet§! §YAnsprüche§!"
+# edit: deepl
+cpt_claims_setting_loc4: "Vollständige Kerne und dauerhafte Ansprüche gewinnen [DeepL Übersetzer]"
 
 cpt_player_setting_enabled: "§GAktiviert§!"
 cpt_player_setting_disabled: "§RDeaktiviert§!"

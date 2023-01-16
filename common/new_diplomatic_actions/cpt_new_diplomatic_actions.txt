@@ -109,6 +109,10 @@ cpt_annex_colony = {
 			limit = { cpt_claims_3 = yes }
 			custom_tooltip = cpt_claims_3_tt
 		}
+		else_if = {
+			limit = { cpt_claims_4 = yes }
+			custom_tooltip = cpt_claims_4_tt
+		}
 		custom_tooltip = cpt_claims_player_tt
 
 		hidden_effect = {
@@ -154,6 +158,15 @@ cpt_annex_colony = {
 					cede_province = ROOT
 
 
+					# previous owner gains full cores & claims
+					if = {
+						limit = { cpt_claims_4 = yes }
+						add_core = PREV
+						add_claim = PREV
+						#clean
+						clr_province_flag = territory_core
+						clr_province_flag = full_core
+					}
 					# previous owner regains cores
 					if = {
 						limit = { cpt_claims_3 = yes }
@@ -309,6 +322,15 @@ cpt_undo_partition = {
 						remove_core = owner
 						cede_province = FROM
 
+						# previous owner gains full cores & claims
+						if = {
+							limit = { cpt_claims_4 = yes }
+							add_core = PREV
+							add_claim = PREV
+							#clean
+							clr_province_flag = territory_core
+							clr_province_flag = full_core
+						}
 						# previous owner regains cores
 						if = {
 							limit = { cpt_claims_3 = yes }

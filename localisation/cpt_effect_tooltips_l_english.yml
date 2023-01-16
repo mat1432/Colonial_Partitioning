@@ -32,4 +32,5 @@ l_english:
  cpt_claims_1_tt: "\nPrevious Owner will §RLose§! All §YCores§!"
  cpt_claims_2_tt: "\nPrevious Owner will §GGain§! §YClaims§!"
  cpt_claims_3_tt: "\nPrevious Owner will §GKeep§! their §YCores§! (including §YTerritorial Cores§!)"
- cpt_claims_player_tt: "\n§YPlayer Colonies§! will ALWAYS §GKeep§! §YCores§! & §GGain§! §YPermanent Claims§!"
+ cpt_claims_4_tt: "\nPrevious Owner will §GGain§! §YFull Cores§! & §YClaims§!"
+ cpt_claims_player_tt: "\n§YPlayer Colonies§! will ALWAYS at minimum §GKeep§! §YCores§! & §GGain§! §YPermanent Claims§!"

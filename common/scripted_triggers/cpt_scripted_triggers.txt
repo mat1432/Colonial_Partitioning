@@ -75,6 +75,22 @@ cpt_claims_3 = {
 				which = colony_p_claims
 				value = 3
 			}
+			NOT = {
+				check_variable = {
+					which = colony_p_claims
+					value = 4
+				}
+			}
+		}
+	}
+}
+cpt_claims_4 = {
+	hidden_trigger = {
+		ROOT = {
+			check_variable = {
+				which = colony_p_claims
+				value = 4
+			}
 		}
 	}
 }
