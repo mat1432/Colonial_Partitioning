@@ -29,12 +29,12 @@ cpt_validate = {
 			}
 			set_country_flag = colony_p_setup
 		}
-		if = { # to fix console flag editing mistakes
+		if = { # if both flags are active, clear both
 			limit = {
 				has_global_flag = colony_p_nocheat
 				has_global_flag = colony_p_cheats
 			}
-			set_global_flag = colony_p_nocheat
+			clr_global_flag = colony_p_nocheat
 			clr_global_flag = colony_p_cheats
 		}
 	}
