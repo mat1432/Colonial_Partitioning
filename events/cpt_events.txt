@@ -600,25 +600,11 @@ country_event = {
 	option = {
 		name = "cpt_r_a"
 		country_event = { id = cpt.98 }
-	}
-}
-country_event = {
-	id = cpt.1099
-	title = "cpt_99_title"
-	desc = "cpt_99_desc"
-	fire_only_once = yes
-	hidden = yes
-	trigger = {
-		ai = no
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-		name = "cpt_r_a"
 		country_event = { id = cpt.99 }
 	}
 }
+# cpt.1099
+# used previously, do not use ever again
 
 ####################################################################################################
 # Recursive Events
