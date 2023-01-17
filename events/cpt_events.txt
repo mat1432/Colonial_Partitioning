@@ -491,14 +491,12 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = colony_p_menu
 			cpt_validate = yes
 		}
 	}
 	after = {
 		hidden_effect = {
 			cpt_validate = yes
-			clr_country_flag = colony_p_menu
 		}
 	}
 
@@ -550,13 +548,12 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = colony_p_menu
 			cpt_validate = yes
 		}
 	}
 	after = {
 		hidden_effect = {
-			clr_country_flag = colony_p_menu
+			cpt_validate = yes
 		}
 	}
 
