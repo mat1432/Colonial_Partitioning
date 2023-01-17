@@ -7,6 +7,7 @@ The change logs are in English, so far any and all translations of the Change Lo
 * Updated the Current Setting description on each menu.
 * Fixed the Cheats Indicator showing an incorrect value when opening New Owner and Previous Owner menus consecutively.
 * Fixed Cheats and Multiplayer menus preventing you from opening the main menu
+* If a major revolution mod changes the vanilla icons, the new sprites are now used instead of the vanilla sprites.
 
 ## 1.1.2b
 * Bug Fix: Previous Owner Setting would change New Owner setting by mistake
