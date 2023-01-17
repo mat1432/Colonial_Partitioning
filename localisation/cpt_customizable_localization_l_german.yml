@@ -26,6 +26,6 @@ cpt_undo_warning_loc1: ""
 
 # custom localisation
 # may break everything else so its here at the bottom
-cpt_no_cheat_2: "(£no£ £ironman£)"
+cpt_no_cheat_2: "(£no£ £cptironman£)"
 cpt_no_cheat_1: "(£no£ :\\>)"
 cpt_no_cheat_3: "(£yes£ :\\>)"
