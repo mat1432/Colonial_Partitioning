@@ -3,6 +3,10 @@ Made by mat1432 [Steam](https://steamcommunity.com/id/mat1432/) [GitHub](https:/
 The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 * NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
+## 1.1.2d
+* Renamed and adjusted menu titles. *Within reason for contextual accuracy*
+* Colonist icon used in German translation
+
 ## 1.1.2c
 * Updated the Current Setting description on each menu.
 * Fixed the Cheats Indicator showing an incorrect value when opening New Owner and Previous Owner menus consecutively.
@@ -18,9 +22,10 @@ The change logs are in English, so far any and all translations of the Change Lo
 * Previous Owner Claims Settings: Renamed to 'Previous Owner Cores & Claims Setting'. *Or similar equivalent*
 * Previous Owner Cores & Claims:
   * Added 4th option, 'Gain Full Cores & Claims' **Only Enabled by Cheats**
-    * *If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.*
+    * *Also, If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.*
 * Undo Partitioning:
   * Bug Fix: Could not give YOUR soverign lands to the subject specified.
+    * *This process cannot cede your capital to the specified subject!*
   * Refactored Code: Slightly reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
     * *Still very laggy*
 

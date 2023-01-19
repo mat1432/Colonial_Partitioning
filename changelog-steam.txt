@@ -2,6 +2,12 @@
 ### The change logs are in English, so far any and all translations of the Change Logs were done via online websites:
 ### -> NONE of the Translators who Volunteered their time are at fault for any imperfections!
 
+1.1.2d
+[list]
+    [*]Renamed and adjusted menu titles. [i]Within reason for contextual accuracy[/i]
+    [*]Colonist icon used in German translation
+[/list]
+
 1.1.2c
 [list]
     [*]Updated the Current Setting description on each menu.
@@ -24,12 +30,15 @@
     [list]
         [*]Added 4th option, 'Gain Full Cores & Claims' [b]Only Enabled by Cheats[/b]
         [list]
-            [*][i]If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.[/i]
+            [*][i]Also, If enabled: Colonies that were every a player will Gain Full Cores & Permanent Claims on all lost land.[/i]
         [/list]
     [/list]
     [*]Undo Partitioning:
     [list]
         [*]Bug Fix: Could not give YOUR soverign lands to the subject specified.
+        [list]
+            [*][i]This process cannot cede your capital to the specified subject![/i]
+        [/list]
         [*]Refactored Code: Slightly reduced the time it takes for the game to find eligible provinces, then confirms all required conditions in a second step.
         [list]
             [*][i]Still very laggy[/i]
