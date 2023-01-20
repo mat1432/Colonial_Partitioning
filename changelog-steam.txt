@@ -6,6 +6,7 @@
 [list]
     [*]Renamed and adjusted menu titles. [i]Within reason for contextual accuracy[/i]
     [*]Colonist icon used in German translation
+    [*]Recursive event options now show tooltip for reopening itself
 [/list]
 
 1.1.2c

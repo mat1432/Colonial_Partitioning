@@ -6,6 +6,7 @@ The change logs are in English, so far any and all translations of the Change Lo
 ## 1.1.2d
 * Renamed and adjusted menu titles. *Within reason for contextual accuracy*
 * Colonist icon used in German translation
+* Recursive event options now show tooltip for reopening itself
 
 ## 1.1.2c
 * Updated the Current Setting description on each menu.
