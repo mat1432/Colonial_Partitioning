@@ -64,6 +64,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 		custom_tooltip = cpt_start_delayed_tt
 		hidden_effect = { country_event = { id = cpt.1001 } }
+		tooltip = { country_event = { id = cpt.1 } }
 	}
 
 	option = {
@@ -86,6 +87,7 @@ country_event = {
 			cpt_clr_protected = yes
 		}
 		hidden_effect = { country_event = { id = cpt.1001 } }
+		tooltip = { country_event = { id = cpt.1 } }
 	}
 }
 
@@ -157,6 +159,7 @@ country_event = {
 			cpt_clr_protected = yes
 		}
 		hidden_effect = { country_event = { id = cpt.1002 } }
+		tooltip = { country_event = { id = cpt.2 } }
 	}
 }
 
