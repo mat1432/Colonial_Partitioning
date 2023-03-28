@@ -46,6 +46,15 @@ An event will pop at game start to specify if you want to enable cheaty options 
 * By default, any colonies that were ever a player will be protected (Can be disabled)
 * Any colonies that were ever a player, if partitioned, will Always keep their cores (Including Territorial Cores) & gain Permanent claims on all lost land.
 
+## This did nothing! Why?
+The mod follows some logic before it willingly divides your colonies:
+* If your colony owns provinces without either a Territorial or Full core, *That colony will be skipped.*
+* If your colony is played by a player, *That colony will be skipped.*
+* If your colony is protected (by diplo action), *That colony will be skipped.*
+These checks are enabled by default, so that as a player you would not ever have to core a colonial region manually (let your colonies do that!).
+
+You can disable or modify these checks in your settings.
+
 ## Install and Uninstall Compatibility:
 ### Forwards Compatability:
 * The mod doesn't edit or replace any files, only adds files. It should be forwards compatible with every future update!

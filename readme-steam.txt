@@ -51,6 +51,16 @@ An event will fire at the start of the game to specify if you want to enable che
     [*]Any colonies that were ever a player, if partitioned, will Always keep their cores (Including Territorial Cores) & gain Permanent claims on all lost land.
 [/list]
 
+[h2]This did nothing! Why?[/h2]
+The mod follows some logic before it willingly divides your colonies:
+[list]
+    [*]If your colony owns provinces without either a Territorial or Full core, [i]That colony will be skipped[/i].
+    [*]If your colony is played by a player, [i]That colony will be skipped[/i].
+    [*]If your colony is protected (by diplo action), [i]That colony will be skipped[/i].
+[/list]
+These checks are enabled by default, so that as a player you would not ever have to core a colonial region manually (let your colonies do that!).
+You can disable or modify these checks in your settings.
+
 [h2]Install and Uninstall Compatibility:[/h2]
 [h3]Forwards Compatability:[/h3]
 [list]
@@ -129,6 +139,17 @@ Beim Spielstart wird ein Ereignis angezeigt, in dem eingestellt werden kann, ob 
     [*]Standardmäßig werden alle Kolonien, die jemals von einem Spieler kontrolliert wurden, geschützt (kann deaktiviert werden)
     [*]Jede Kolonie, die jemals von einem Spieler kontrolliert wurden, wird, wenn sie geteilt wird, immer ihre Kernprovinzen behalten (einschließlich Territorialer Kernprovinzen) und permanente Ansprüche auf alles verlorene Land erlangen.
 [/list]
+
+[h2]Dies hat nichts bewirkt! Warum?[/h2]
+Das Mod folgt einigen Logiken, bevor es bereitwillig deine Kolonien teilt:
+[list]
+    [*]Wenn deine Kolonie Provinzen besitzt, die weder einen territorialen noch einen vollen Kern haben, [i]wird diese Kolonie übersprungen[/i].
+    [*]Wenn deine Kolonie von einem Spieler gespielt wird, [i]wird diese Kolonie übersprungen[/i].
+    [*]Wenn deine Kolonie geschützt ist (durch diplomatische Maßnahmen), [i]wird diese Kolonie übersprungen[/i].
+[/list]
+Diese Überprüfungen sind standardmäßig aktiviert, damit du als Spieler niemals eine Kolonialregion manuell kernen musst (lass deine Kolonien das erledigen!).
+Du kannst diese Überprüfungen in deinen Einstellungen deaktivieren oder modifizieren.
+[i]Übersetzung durch Online-Tool[/i].
 
 [h2]Kompatibilität bei Installation und Deinstallation:[/h2]
 [h3]Vorwärtskompatibilität:[/h3]
